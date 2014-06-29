@@ -1,7 +1,17 @@
 ## Factornine Website Yeoman Application
 
-### Addapted 
+### Adapted 
 
+### Requirements
+   # If we have the following: > Error: Cannot find module 'load-grunt-tasks'
+   
+   $ npm update
+   
+   
+### Build
+    # Run the default Grunt task
+	$ grunt
+	
 ### Git
     #
     git remote add origin git@bitbucket.org:rwenban/factornine.co.uk.git
