@@ -18,7 +18,7 @@ angular.module('f9App').controller('CarouselCtrl', ['$log', '$scope',
 
 		$scope.setCurrentSlideIndex = function (index) {
 
-			$log.info('select: ',index)
+			$log.info('select: ',index);
 			$scope.currentIndex = index;
 		};
 

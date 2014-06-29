@@ -4,7 +4,7 @@ angular.module('f9App').animation('.slide-animation', function () {
 	return {
 		beforeAddClass: function (element, className, done) {
 			var scope = element.scope();
-			if (className == 'ng-hide') {
+			if (className === 'ng-hide') {
 				var finishPoint = element.parent().width();
 				if (scope.direction !== 'right') {
 					finishPoint = -finishPoint;
@@ -17,7 +17,7 @@ angular.module('f9App').animation('.slide-animation', function () {
 		},
 		removeClass: function (element, className, done) {
 			var scope = element.scope();
-			if (className == 'ng-hide') {
+			if (className === 'ng-hide') {
 				element.removeClass('ng-hide');
 
 				var startPoint = element.parent().width();

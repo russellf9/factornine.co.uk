@@ -1,3 +1,5 @@
 'use strict';
 
-var app = angular.module('f9App', ['ngAnimate','ngTouch']);
+
+// note removed the var app = // to comply with `jshint`
+angular.module('f9App', ['ngAnimate','ngTouch']);
