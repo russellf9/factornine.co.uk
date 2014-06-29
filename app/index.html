@@ -1,104 +1,239 @@
-<!doctype html>
-<html class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <title>website</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css styles/vendor.css -->
-        <!-- bower:css -->
-        <!-- endbower -->
-        <!-- endbuild -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="../bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="russell@factornine/co.uk">
+	<link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+	<title>Factornine - AS to JS</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../dist/css/bootstrap.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
+	<script src="../../assets/js/html5shiv.js"></script>
+	<script src="../../assets/js/respond.min.js"></script><![endif]-->
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
 
 
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <h3 class="text-muted">website</h3>
-            </div>
+	<!-- DEV -->
+	<!--<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">-->
 
-            <div class="jumbotron">
-                <h1>'Allo, 'Allo!</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-            </div>
+	<!-- Custom styles for the carousel to implement -->
+	<link href="css/carousel.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!--f9 specifici styles -->
+	<link href="style.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body ng-app="f9App">
+<div class="navbar-wrapper">
+	<div class="container">
+		<!-- DEFAULT BORING NAVIGATION -->
+		<div class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Factorine</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- THE CLASSIC FAT HEADING! -->
+		<div class="jumbotron">
+			<h1 class="text-center">Factornine</h1>
+			<h2 class="text-center">AS to JS</h2>
+			<p class="lead text-center">Web Development - Actionscript and Angular.js</p>
+		</div>
+	</div>
+</div>
+<!-- end of navbar-wrapper -->
 
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
 
-                    <h4>Sass</h4>
-                    <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
+<div class="container marketing">
+<hr class="featurette-divider">
+<!-- Three columns of text-->
+<div class="row">
+	<div class="col-lg-4">
+		<!-- TODO - suss out the data src bits -->          <!-- data-src="holder.js/140x140" -->
+		<img class="img-circle" src="../images/espresso_closeup_1.png" alt="espresso">
+
+		<h2>e-learning</h2>
+		<!-- TODO - add content -->
+		<p>....</p>
+	</div>
+	<div class="col-lg-4">
+		<img class="img-circle" src="../images/anchor_close_up_1.png" alt="make a moo!">
+
+		<h2>games</h2>
+		<!-- TODO - add content -->
+		<p>....</p>
+	</div>
+	<!-- /.col-lg-4 -->
+	<div class="col-lg-4">
+		<!-- src="data:image/png;base64,"  -->          <!-- data-src="holder.js/140x140"  -->
+		<img class="img-circle" src="../images/ford_closeup_1.png" alt="ford">
+
+		<h2>advertising</h2>
+
+		<p>....</p>
+	</div>
+	<!-- /.col-lg-4 -->
+</div>
+<!-- /.row -->
+
+<!-- START THE FEATURETTES -->
+<hr class="featurette-divider">
+<!-- ABOUT -->
+<div class="row featurette" id="about">
+	<div class="col-md-7">
+		<h2 class="featurette-heading">About: <span class="text-muted"> Factornine</span></h2>
+
+		<p class="lead">Factornine Limited is the company which represents Russell Wenban a London based freelance developer.</p>
+
+		<p class="lead">I have been programmer for 15 years and have developed a variety of projects for leading
+		                e-learning companies, design agencies and well known brands.</p>
+
+		<p class="lead">Some of the well known brands I've produced for include: BBC Jam, Espresso Education, Ford, Nectar
+		                and Anchor Butter.</p>
+	</div>
+	<div class="col-md-5">
+		<!-- src="data:image/png;base64," -->          <!-- data-src="holder.js/500x500/auto" -->
+		<img class="featurette-image img-responsive" src="../images/videotel_closeup_2.png" alt="angular-service">
+	</div>
+</div>
+<hr class="featurette-divider">
+<!-- SKILLS -->
+<div class="row featurette" id="skills">
+	<div class="col-md-5">
+		<!-- data-src="holder.js/500x500/auto"  -->
+		<img class="featurette-image img-responsive" src="../images/code_3.png" alt="code">
+	</div>
+	<div class="col-md-7">
+		<h2 class="featurette-heading">Skills: <span class="text-muted">AS to JS</span></h2>
+
+		<p class="lead">I am a proficient programmer successfully making the transition from the Classical world of
+		                Actionscript to the contemporary world of functional JavaScript and Angular.js.</p>
+
+		<p class="lead">My skills include: AS3, Angular.js, HTML5 and CS3, Twitter Bootstrap, UNIX and ANT.</p>
+
+		<p class="lead">I'm currently in the process of re-freshing my website so keep posted.</p>
+
+	</div>
+</div>
+
+<hr class="featurette-divider">
+<!-- Portfolio -->
+<div class="row featurette" id="portfolio" ng-controller="CarouselCtrl">
+	<div class="col-md-12 text-center">
+		<h2 class="featurette-heading">Portfolio: <span class="text-muted">AS to  JS</span></h2>
+	</div>
+	<div class="container slider">
+		<img style="vertical-align: middle" ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+
+		<a class="arrow prev" ng-click="nextSlide()"></a> <a class="arrow next" ng-click="prevSlide()"></a>
+
+		<nav class="nav-carousel">
+			<div class="wrapper">
+				<ul class="dots">
+					<li class="dot" ng-repeat="slide in slides">
+						<a ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);">
+							 </a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+	</div>
+	<div class="container carousel-description">
+		<p class="text-muted toggle" ng-repeat="slide in slides" ng-if="isCurrentSlideIndex($index)">{{slides[currentIndex].description}}</p>
+	</div>
+</div>
+
+<hr class="featurette-divider">
+<!-- CONTACT -->
+<div class="row" id="contact">
+	<div class="col-lg-12 col-md-12">
+		<h2 class="featurette-heading">Keep in touch: <span class="text-muted">email &amp; social media</span></h2>
+
+		<p class="lead"><br/></p>
+
+		<div class="col-lg-3 text-center f9-contacts center">
+			<h4>
+				<script type="text/javascript"> document.write("<a href=\"mail" + "to:" + new Array("russell", "factornine.co.uk").join("@") + "\">" + new Array("russell", "factornine.co.uk").join("@") + "</" + "a>"); </script>
+			</h4>
+		</div>
+		<div class="col-lg-3 col-md-3 text-center f9-contacts center">
+			<a href="http://uk.linkedin.com/pub/russell-wenban/18/614/39b" style="text-decoration:none;">
+				<img src="../images/linkedin.png" width="48" height="48" alt="View Russell Wenban's LinkedIn profile"
+				     border="0"></a>
+		</div>
+		<div class="col-lg-3 col-md-3 text-center f9-contacts center">
+			<a href="http://twitter.com/russellf9"><img src="../images/twitter_logo_blue.png" width="48" height="48" alt="f9 twitter"></a>
+		</div>
+		<div class="col-lg-3 col-md-3 text-center f9-contacts center">
+			<a href="http://www.factornine.co.uk/blog/"><img src="../images/wordpress_icon.png" width="48" height="48" alt="f9 blog"></a>
+		</div>
+	</div>
+</div>
+<hr class="featurette-divider">
+
+<!-- FOOTER -->
+<footer>
+	<p class="pull-right"><a href="#">Back to top</a></p>
+
+	<p>&copy; 2014 Factornine Limited &middot; Site last updated 17:56 26 June 2014</p>
+</footer>
+
+</div>
 
 
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
-                </div>
-            </div>
-
-            <div class="footer">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-            </div>
-
-        </div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+<!-- build:js ../assets/js/jquery.min.js -->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<!-- /build -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+<!-- build:js ../js/bootstrap.min.js -->
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- /build -->
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
-        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
-        <!-- endbuild -->
+<!-- build:js ../assets/js/jquery.min.map -->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.map"></script>
+<!-- /build -->
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+<!-- For Dev -->
+<!-- Angular and app dependancies -->
+
+<!-- build:js javascripts/app.min.js -->
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="bower_components/angular-touch/angular-touch.js"></script>
+<script type="text/javascript" src="f9_app/f9App.js"></script>
+<script type="text/javascript" src="f9_app/carousel/carousel.ctrl.js"></script>
+<script type="text/javascript" src="f9_app/animation/slideAniamtion.dir.js"></script>
+<script type="text/javascript" src="f9_app/animation/toggle.dir.js"></script>
+<!-- /build -->
+
+
 </body>
 </html>

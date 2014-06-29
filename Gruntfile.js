@@ -279,6 +279,18 @@ module.exports = function (grunt) {
             }
         },
 
+	    concat: {
+		    scripts: {
+			    src: [
+//				    'bower_components/angular/angular.js',
+//				    'bower_components/angular-animate/angular-animate.js',
+//				    'bower_components/angular-touch/angular-touch.js',
+				    '<%= config.app %>/scripts/{,*/}*.js'
+			    ],
+			    dest: '<%= config.dist %>/app.js'
+		    }
+	    },
+
         // By default, your `index.html`'s <!-- Usemin block --> will take care of
         // minification. These next options are pre-configured if you do not wish
         // to use the Usemin blocks.
@@ -364,7 +376,7 @@ module.exports = function (grunt) {
                 'copy:styles'
             ],
             dist: [
-                'sass',
+                //'sass',
                 'copy:styles',
                 'imagemin',
                 'svgmin'
@@ -411,15 +423,13 @@ module.exports = function (grunt) {
         'clean:dist',
         'useminPrepare',
         'concurrent:dist',
-        'autoprefixer',
-        'concat',
-        'cssmin',
-        'uglify',
-        'copy:dist',
-        'modernizr',
-        'rev',
-        'usemin',
-        'htmlmin'
+        'concat'
+//	    ,
+//       'cssmin'
+       // 'uglify',
+       // 'copy:dist',
+       // 'usemin',
+       // 'htmlmin'
     ]);
 
     grunt.registerTask('default', [
