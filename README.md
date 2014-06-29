@@ -1,6 +1,6 @@
 ## Factornine Website Yeoman Application
 
-### Addapted 
+### Addapted
 
 ### Git
     #
