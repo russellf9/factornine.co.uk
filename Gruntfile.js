@@ -292,58 +292,6 @@ module.exports = function (grunt) {
 				]
 			}
 		},
-//		// concatanates the defined JS files into one JS file
-//		concat: {
-//			scripts: {
-//				src: [
-////				    'bower_components/angular/angular.js',
-////				    'bower_components/angular-animate/angular-animate.js',
-////				    'bower_components/angular-touch/angular-touch.js',
-//					'<%= config.app %>/scripts/{,*/}*.js'
-//				],
-//				dest: '<%= config.dist %>/scripts/app.js'
-//			}
-//		},
-
-//		uglify: {
-//			options: {
-//				report: 'min',
-//				mangle: false
-//			},
-//			scripts: {
-//				files: {
-//					'<%= config.dist %>/app.js': '<%= config.dist %>/app.js'
-//				}
-//			}
-//		},
-
-
-		// By default, your `index.html`'s <!-- Usemin block --> will take care of
-		// minification. These next options are pre-configured if you do not wish
-		// to use the Usemin blocks.
-//		cssmin: {
-//			dist: {
-//				files: {
-//					'<%= config.dist %>/styles/main.css': [
-//						'.tmp/styles/{,*/}*.css',
-//						'<%= config.app %>/styles/{,*/}*.css'
-//					]
-//				}
-//			}
-//		},
-//		uglify: {
-//			dist: {
-//				files: {
-//					'<%= config.dist %>/scripts/scripts.js': [
-//						'<%= config.dist %>/scripts/scripts.js'
-//					]
-//				}
-//			}
-//		},
-//		concat: {
-//			dist: {}
-//		},
-
 		// Copies remaining files to places other tasks can use
 		copy: {
 			dist: {
