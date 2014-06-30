@@ -408,7 +408,7 @@ module.exports = function (grunt) {
 			dist: [
 				//'sass',
 				'copy:styles',
-				'imagemin',
+				'newer:imagemin',
 				'svgmin'
 			]
 		}
