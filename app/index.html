@@ -9,24 +9,25 @@
 
 	<title>Factornine - AS to JS</title>
 
-	<!-- Bootstrap core CSS -->
-	<link href="../dist/css/bootstrap.css" rel="stylesheet">
-
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
 	<script src="../../assets/js/html5shiv.js"></script>
 	<script src="../../assets/js/respond.min.js"></script><![endif]-->
+	<!-- endbower -->
+	<!-- endbuild -->
 
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
 
+	<!-- build:css styles/vendor.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
 
-	<!-- DEV -->
-	<!--<link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">-->
 
-	<!-- Custom styles for the carousel to implement -->
-	<link href="css/carousel.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<!--f9 specifici styles -->
-	<link href="style.css" rel="stylesheet">
+	<!-- build:css(.tmp) styles/main.css -->
+	<link rel="stylesheet" href="styles/carousel.css" >
+	<link rel="stylesheet" href="styles/style.css">
+	<!-- endbuild -->
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -72,14 +73,14 @@
 <div class="row">
 	<div class="col-lg-4">
 		<!-- TODO - suss out the data src bits -->          <!-- data-src="holder.js/140x140" -->
-		<img class="img-circle" src="../images/espresso_closeup_1.png" alt="espresso">
+		<img class="img-circle" src="images/espresso_closeup_1.png" alt="espresso">
 
 		<h2>e-learning</h2>
 		<!-- TODO - add content -->
 		<p>....</p>
 	</div>
 	<div class="col-lg-4">
-		<img class="img-circle" src="../images/anchor_close_up_1.png" alt="make a moo!">
+		<img class="img-circle" src="images/anchor_close_up_1.png" alt="make a moo!">
 
 		<h2>games</h2>
 		<!-- TODO - add content -->
@@ -88,7 +89,7 @@
 	<!-- /.col-lg-4 -->
 	<div class="col-lg-4">
 		<!-- src="data:image/png;base64,"  -->          <!-- data-src="holder.js/140x140"  -->
-		<img class="img-circle" src="../images/ford_closeup_1.png" alt="ford">
+		<img class="img-circle" src="images/ford_closeup_1.png" alt="ford">
 
 		<h2>advertising</h2>
 
@@ -115,7 +116,7 @@
 	</div>
 	<div class="col-md-5">
 		<!-- src="data:image/png;base64," -->          <!-- data-src="holder.js/500x500/auto" -->
-		<img class="featurette-image img-responsive" src="../images/videotel_closeup_2.png" alt="angular-service">
+		<img class="featurette-image img-responsive" src="images/videotel_closeup_2.png" alt="angular-service">
 	</div>
 </div>
 <hr class="featurette-divider">
@@ -123,7 +124,7 @@
 <div class="row featurette" id="skills">
 	<div class="col-md-5">
 		<!-- data-src="holder.js/500x500/auto"  -->
-		<img class="featurette-image img-responsive" src="../images/code_3.png" alt="code">
+		<img class="featurette-image img-responsive" src="images/code_3.png" alt="code">
 	</div>
 	<div class="col-md-7">
 		<h2 class="featurette-heading">Skills: <span class="text-muted">AS to JS</span></h2>
@@ -181,14 +182,14 @@
 		</div>
 		<div class="col-lg-3 col-md-3 text-center f9-contacts center">
 			<a href="http://uk.linkedin.com/pub/russell-wenban/18/614/39b" style="text-decoration:none;">
-				<img src="../images/linkedin.png" width="48" height="48" alt="View Russell Wenban's LinkedIn profile"
+				<img src="images/linkedin.png" width="48" height="48" alt="View Russell Wenban's LinkedIn profile"
 				     border="0"></a>
 		</div>
 		<div class="col-lg-3 col-md-3 text-center f9-contacts center">
-			<a href="http://twitter.com/russellf9"><img src="../images/twitter_logo_blue.png" width="48" height="48" alt="f9 twitter"></a>
+			<a href="http://twitter.com/russellf9"><img src="images/twitter_logo_blue.png" width="48" height="48" alt="f9 twitter"></a>
 		</div>
 		<div class="col-lg-3 col-md-3 text-center f9-contacts center">
-			<a href="http://www.factornine.co.uk/blog/"><img src="../images/wordpress_icon.png" width="48" height="48" alt="f9 blog"></a>
+			<a href="http://www.factornine.co.uk/blog/"><img src="images/wordpress_icon.png" width="48" height="48" alt="f9 blog"></a>
 		</div>
 	</div>
 </div>
@@ -208,31 +209,27 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
 
-<!-- build:js ../assets/js/jquery.min.js -->
-<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-<!-- /build -->
-
-<!-- build:js ../js/bootstrap.min.js -->
-<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<!-- /build -->
-
-<!-- build:js ../assets/js/jquery.min.map -->
-<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.map"></script>
-<!-- /build -->
-
-<!-- For Dev -->
 <!-- Angular and app dependancies -->
 
-<!-- build:js javascripts/app.min.js -->
-<script type="text/javascript" src="bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
-<script type="text/javascript" src="bower_components/angular-touch/angular-touch.js"></script>
-<script type="text/javascript" src="f9_app/f9App.js"></script>
-<script type="text/javascript" src="f9_app/carousel/carousel.ctrl.js"></script>
-<script type="text/javascript" src="f9_app/animation/slideAniamtion.dir.js"></script>
-<script type="text/javascript" src="f9_app/animation/toggle.dir.js"></script>
-<!-- /build -->
+<!-- build:js scripts/plugins.js -->
+<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="../bower_components/angular-touch/angular-touch.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script type="text/javascript" src="scripts/f9App.js"></script>
+<script type="text/javascript" src="scripts/carousel/carousel.ctrl.js"></script>
+<script type="text/javascript" src="scripts/animation/slideAniamtion.dir.js"></script>
+<script type="text/javascript" src="scripts/animation/toggle.dir.js"></script>
+<!-- endbuild -->
 
 
 </body>
