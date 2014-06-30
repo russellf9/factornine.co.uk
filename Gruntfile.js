@@ -249,6 +249,7 @@ module.exports = function (grunt) {
 				files: [
 					{
 						expand: true,
+						// cwd is 'current working directory'
 						cwd: '<%= config.app %>/images',
 						src: '{,*/}*.{gif,jpeg,jpg,png}',
 						dest: '<%= config.dist %>/images'
@@ -308,13 +309,6 @@ module.exports = function (grunt) {
 							'{,*/}*.html',
 							'styles/fonts/{,*/}*.*'
 						]
-					},
-					{
-						expand: true,
-						dot: true,
-						cwd: '.',
-						src: ['bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/*.*'],
-						dest: '<%= config.dist %>'
 					}
 				]
 			},
@@ -356,7 +350,7 @@ module.exports = function (grunt) {
 			dist: [
 				//'sass',
 				'copy:styles',
-				'newer:imagemin',
+				//'newer:imagemin',
 				'svgmin'
 			]
 		}
