@@ -353,6 +353,19 @@ module.exports = function (grunt) {
 				'imagemin',
 				'svgmin'
 			]
+		},
+
+		'ftp-deploy': {
+			build: {
+				auth: {
+					host: 'ftp.factornine.co.uk',
+					port: '79.170.44.22',
+					authKey: 'key1'
+				},
+				src: '<%= config.dist %>',
+				dest: '/public_html/test',
+				exclusions: ['{,*/}*.DS_Store']
+			}
 		}
 	});
 
@@ -402,6 +415,8 @@ module.exports = function (grunt) {
 		'usemin',
 		'htmlmin'
 	]);
+
+
 
 	grunt.registerTask('default', [
 		'newer:jshint',
