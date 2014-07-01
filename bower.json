@@ -2,13 +2,10 @@
   "name": "website",
   "private": true,
   "dependencies": {
-    "bootstrap-sass-official": "~3.1.0",
+    "bootstrap-sass-official": "~3.2.0",
     "bootstrap": "~3.0.3",
     "modernizr": "~2.6.2",
     "jquery": "~1.11.0"
   },
-  "devDependencies": {},
-  "resolutions": {
-    "bootstrap-sass-official": "~3.2.0"
-  }
+  "devDependencies": {}
 }
