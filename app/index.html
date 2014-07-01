@@ -169,9 +169,10 @@
 <hr class="featurette-divider">
 
 <!-- FOOTER -->
-<footer>
+<footer ng-controller="DateCtrl" ng-cloak >
 	<p class="pull-right"><a href="#">Back to top</a></p>
-	<p>&copy; 2014 Factornine Limited &middot; Site last updated: 01 July 2014</p>
+	<p>&copy; 2014 Factornine Limited &middot; Site last updated: {{date}}</p>
+ </p>
 </footer>
 
 </div>
@@ -185,6 +186,8 @@
 <!-- bower:js -->
 <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="../bower_components/moment/moment.js"></script>
+<script type="text/javascript" src="../bower_components/moment-timezone/moment-timezone.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -198,6 +201,7 @@
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
 <script type="text/javascript" src="scripts/f9App.js"></script>
+<script type="text/javascript" src="scripts/date/data.ctrl.js"></script>
 <script type="text/javascript" src="scripts/carousel/carousel.ctrl.js"></script>
 <script type="text/javascript" src="scripts/animation/slideAniamtion.dir.js"></script>
 <script type="text/javascript" src="scripts/animation/toggle.dir.js"></script>
