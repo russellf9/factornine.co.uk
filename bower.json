@@ -6,7 +6,13 @@
     "bootstrap": "~3.0.3",
     "modernizr": "~2.6.2",
     "jquery": "~1.11.0",
-    "moment": "~2.7.0"
+    "moment": "~2.7.0",
+    "d3": "~3.4.9",
+    "nvd3": "~1.1.15-beta",
+    "angularjs-nvd3-directives": "~0.0.7"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "resolutions": {
+    "d3": "~3.4.9"
+  }
 }

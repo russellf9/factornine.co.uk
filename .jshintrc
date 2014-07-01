@@ -1,6 +1,6 @@
 {
     "node": true,
-    "predef":["angular","TweenMax"],
+    "predef":["angular","TweenMax","d3","moment"],
     "browser": true,
     "esnext": true,
     "bitwise": true,

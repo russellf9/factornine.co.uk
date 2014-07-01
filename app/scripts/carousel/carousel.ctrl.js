@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('f9App').controller('CarouselCtrl', ['$log', '$scope',
-	function($log, $scope ) {
+	function ($log, $scope) {
 		$log.info('CarouselCtrl');
 		$scope.slides = [
 			{image: 'images/1154_test_review_2.800x520.fw.png', description: 'Videotel Marine International - AS3 e-learning applications for the shipping industry.'},

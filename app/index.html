@@ -20,14 +20,18 @@
 	<!-- build:css styles/vendor.css -->
 	<!-- bower:css -->
 	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="../bower_components/nvd3/nv.d3.css"/>
 	<!-- endbower -->
 	<!-- endbuild -->
 
 
 	<!-- build:css(.tmp) styles/main.css -->
 	<link rel="stylesheet" href="styles/carousel.css" >
+	<link rel="stylesheet" href="styles/d3.css">
 	<link rel="stylesheet" href="styles/style.css">
 	<!-- endbuild -->
+
+
 </head>
 <!-- NAVBAR
 ================================================== -->
@@ -116,6 +120,13 @@
 	</div>
 </div>
 
+	<div class="row featurette" id="bars" ng-controller="SkillsCtrl">
+		<div class="col-md-7">
+			<bars data="{{data}}" skills="{{skills}}"></bars>
+		</div>
+	</div>
+
+
 <hr class="featurette-divider">
 <!-- Portfolio -->
 <div class="row featurette" id="portfolio" ng-controller="CarouselCtrl">
@@ -188,6 +199,9 @@
 <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="../bower_components/moment/moment.js"></script>
 <script type="text/javascript" src="../bower_components/moment-timezone/moment-timezone.js"></script>
+<script type="text/javascript" src="../bower_components/d3/d3.js"></script>
+<script type="text/javascript" src="../bower_components/nvd3/nv.d3.js"></script>
+
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -197,11 +211,21 @@
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="../bower_components/angular-animate/angular-animate.js"></script>
 <script type="text/javascript" src="../bower_components/angular-touch/angular-touch.js"></script>
+<script type="text/javascript" src="../bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
+
+<script type="text/javascript" src="scripts/d3/d3.svc.js"></script>
 <script type="text/javascript" src="scripts/f9App.js"></script>
-<script type="text/javascript" src="scripts/date/data.ctrl.js"></script>
+<script type="text/javascript" src="scripts/date/date.ctrl.js"></script>
+<script type="text/javascript" src="scripts/skills/skills.ctrl.js"></script>
+
+<script type="text/javascript" src="scripts/skills/chart.ctrl.js"></script>
+<script type="text/javascript" src="scripts/d3/barChart.dir.js"></script>
+
+<script type="text/javascript" src="scripts/skills/skills.dir.js"></script>
 <script type="text/javascript" src="scripts/carousel/carousel.ctrl.js"></script>
 <script type="text/javascript" src="scripts/animation/slideAniamtion.dir.js"></script>
 <script type="text/javascript" src="scripts/animation/toggle.dir.js"></script>
