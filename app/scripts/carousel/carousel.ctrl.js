@@ -14,6 +14,9 @@ angular.module('f9App').controller('CarouselCtrl', ['$log', '$scope',
 			{image:'images/multiple_choice.800x520.png', description: 'Multiple Choice - Proof of concept `mobile first` app made in PhoneGap.'},
 			{image:'images/pets_in_spanish.png', description: 'Proof of concept e-learning application - written in Objective-C.'}
 		];
+
+		$scope.direction = 'left';
+
 		$scope.currentIndex = 0;
 
 		$scope.setCurrentSlideIndex = function (index) {
@@ -27,10 +30,12 @@ angular.module('f9App').controller('CarouselCtrl', ['$log', '$scope',
 		};
 
 		$scope.prevSlide = function () {
+			$scope.direction = 'left';
 			$scope.currentIndex = ($scope.currentIndex < $scope.slides.length - 1) ? ++$scope.currentIndex : 0;
 		};
 
 		$scope.nextSlide = function () {
+			$scope.direction = 'right';
 			$scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
 		};
 	}
