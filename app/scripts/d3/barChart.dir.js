@@ -46,7 +46,6 @@ angular.module('f9App').directive('d3Bars', ['$window', '$timeout', 'd3Service',
 						if (!data) {
 							return;
 						}
-
 						// setup variables
 						var width = d3.select(element[0]).node().offsetWidth - margin,
 						// calculate the height
@@ -86,7 +85,7 @@ angular.module('f9App').directive('d3Bars', ['$window', '$timeout', 'd3Service',
 							.append('text')
 							.attr('fill', '#AAAAAAA')
 							.attr('y', function (d, i) {
-								return i * (barHeight + barPadding) + 20;
+								return i * (barHeight + barPadding) + 18;
 							})
 							.attr('x', 25)
 							.attr('height', 36)

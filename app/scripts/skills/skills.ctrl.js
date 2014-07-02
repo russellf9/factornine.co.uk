@@ -9,9 +9,9 @@ angular.module('f9App').controller('SkillsCtrl', ['$log', '$scope',
 		 * 3 Subject Area
 		 * 4 Tool
 		 * 5 Design / Markup - was #6E003E | 8E 10 5E
-		 *
+		 * #00E316
 		 */
-		$scope.colors = ['#ff7f0e','#3CB03C','#1f77b4','#2F87C4','#8E205E'];
+		$scope.colors = ['#ff7f0e','#3CB03C','#306983','#F7EA1E','#8E205E'];
 
 		$scope.data = [
 			{name: 'Angular.js', score: 4, color:2},
@@ -22,9 +22,11 @@ angular.module('f9App').controller('SkillsCtrl', ['$log', '$scope',
 			{name: 'Twitter Bootstrap', score: 3, color:5},
 			{name: 'CSS3', score: 2, color:5},
 			{name: 'd3', score: 1, color:5},
+			{name: 'PhoneGap', score:2, color:4},
 			{name: 'UNIX', score: 2,  color:1},
 			{name: 'SAAS', score: 1, color:5},
 			{name: 'UI/UX', score: 4, color:3},
+			{name: 'Jasmine - JS Unit Testing', score:2, color:4},
 			{name: 'E-learning', score: 5, color:3},
 			{name: 'iOS', score: 1, color:3},
 			{name: 'Objective-C', score: 1, color:1},
@@ -36,4 +38,10 @@ angular.module('f9App').controller('SkillsCtrl', ['$log', '$scope',
 			{name: 'Design Patterns', score: 3, color:2},
 			{name: 'SVN', score: 3, color:4}
 		];
+
+		$scope.animate = function() {
+			$log.info('SkillsCtrl::Animate!')
+		}
+
+
 	}]);
