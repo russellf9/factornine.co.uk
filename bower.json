@@ -9,7 +9,10 @@
     "moment": "~2.7.0",
     "d3": "~3.4.9",
     "nvd3": "~1.1.15-beta",
-    "angularjs-nvd3-directives": "~0.0.7"
+    "angularjs-nvd3-directives": "~0.0.7",
+    "moment-timezone": "~0.1.0",
+    "angular-animate": "~1.2.19",
+    "angular-touch": "~1.2.19"
   },
   "devDependencies": {},
   "resolutions": {

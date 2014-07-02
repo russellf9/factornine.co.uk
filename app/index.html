@@ -122,7 +122,14 @@
 
 	<div class="row featurette" id="bars" ng-controller="SkillsCtrl">
 		<div class="col-md-7">
-			<bars data="{{data}}" skills="{{skills}}"></bars>
+			<d3Bars></d3Bars>
+		</div>
+	</div>
+	
+	<div class="row featurette" id="barChart">
+		<div class="col-md-7">
+		<div d3-bars bar-height="20" bar-padding="5"></div>
+			
 		</div>
 	</div>
 
