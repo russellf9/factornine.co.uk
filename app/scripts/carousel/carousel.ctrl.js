@@ -10,11 +10,16 @@ angular.module('f9App').controller('CarouselCtrl', ['$log', '$scope',
 			{image: 'images/focus_1.800x520.fw.png', description: 'Actionscript 2.0 coding for ‘Ford Ezine’. Including using complex and dynamic interactive control of streaming FLV Video content. I successful created a seamless and harmonious video interface which formed part of a successful campaign for Ford.'},
 			{image: 'images/arial.880x520.fw.png', description: 'Creating a set of Flash banners for Indesit/Ariel French advertising campaign, for Outsideline Agency. Uses the Greensock animation library as used by this carousel'},
 			{image: 'images/anchor_close_up_1.800x520.png', description: 'Interactive game for Anchor Butter. Using an AS3 MVC framework, extensive use of dynamic xml data and dynamically loading MP3 sound effects.'},
-			{image: 'images/pta_social_1.fw.800x520.png', description:'Updating of social media website for parent teacher associations which uses the Play Framework to incorporate an `up to date` modular Angular structure. Tasks have so far included: organising the package structure by feature, implementing a `HAL` compliant model, creating Grunt tasks to run unit tests and create minified production file, and integrated unit tests using Jasmine.'},
+			{image: 'images/pta_social_3.png', description:'Updating of social media website for parent teacher associations which uses the Play Framework to incorporate an `up to date` modular Angular structure. Tasks have so far included: organising the package structure by feature, implementing a `HAL` compliant model, creating Grunt tasks to run unit tests and create minified production file, and integrated unit tests using Jasmine.'},
+			{image: 'images/pta_social_2.png', description:'PTAsocial - Screenshot of an Event Page.'},
+			{image: 'images/pta_social_4.png', description:'PTAsocial - Screenshot of an Event Page in `Edit Mode`'},
 			{image:'images/multiple_choice.800x520.png', description: 'Multiple Choice - Proof of concept `mobile first` app made in PhoneGap.'},
+			{image:'images/bin_weevil_airfix_game.png', description: 'Bin Weevils - Airfix Flash game.'},
 			{image:'images/pets_in_spanish.png', description: 'Proof of concept e-learning application - written in Objective-C.'}
 		];
 
+
+		//
 		$scope.direction = 'left';
 
 		$scope.currentIndex = 0;
