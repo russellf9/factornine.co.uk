@@ -40,8 +40,8 @@ angular.module('f9App').controller('SkillsCtrl', ['$log', '$scope',
 		];
 
 		$scope.animate = function() {
-			$log.info('SkillsCtrl::Animate!')
-		}
+			$log.info('SkillsCtrl::Animate!');
+		};
 
 
 	}]);

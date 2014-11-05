@@ -27,3 +27,9 @@ And: [Improving Your Development Workflow with Yeoman](http://blog.teamtreehouse
 
     # To push to master
     $ git push origin master
+
+### Location
+    # In terminal locate the `app`
+    $ cd /Users/russellwenban/localhosts/www.factornine.co.uk/website
+
+

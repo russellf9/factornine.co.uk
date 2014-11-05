@@ -12,7 +12,8 @@
     "angularjs-nvd3-directives": "~0.0.7",
     "moment-timezone": "~0.1.0",
     "angular-animate": "~1.2.19",
-    "angular-touch": "~1.2.19"
+    "angular-touch": "~1.2.19",
+    "angular-youtube-mb": "~0.0.3"
   },
   "devDependencies": {},
   "resolutions": {

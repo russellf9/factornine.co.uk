@@ -6,7 +6,7 @@ angular.module('f9App').controller('DateCtrl', ['$log', '$scope',
 
 		var date = document.lastModified.toString();
 
-		var format = 'dddd, MMMM Do YYYY, h:ma';
+		var format = 'dddd, MMMM Do YYYY, h:mma';
 
 		//$log.info('B DateCtrl: modified: ',date.toString());
 
