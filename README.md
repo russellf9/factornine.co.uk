@@ -33,3 +33,36 @@ And: [Improving Your Development Workflow with Yeoman](http://blog.teamtreehouse
     $ cd /Users/russellwenban/localhosts/www.factornine.co.uk/website
 
 
+### Rebuild
+
+Simply run the default task:
+
+```
+grunt
+```
+
+This will build the app. When any changes have been made or run:
+
+```
+grunt build
+```
+
+The grunt task is a bit slow to do everything.
+
+Will build to the _dist_ directory.
+
+### Upload
+
+I'm currently using Filezilla, and the site is hosted by [Media Marmot Ltd](http://cp.factornine.co.uk).
+
+1. Unlock the site
+2. Open Filezilla
+3. In Filezilla - Open local site `/Users/russellwenban/localhosts/www.factornine.co.uk/website/dist/`
+3. In Filezilla - Check connect to `factornine.co.uk`
+4. and open `/public_html`
+5. Upload all files from the local dist folder
+
+
+## Gulp
+
+I intend to swap to using Gulp for the build tasks and if possible the deployment.

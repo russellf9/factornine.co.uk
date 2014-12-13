@@ -15,7 +15,9 @@ angular.module('f9App').controller('CarouselCtrl', ['$log', '$scope',
 			{image: 'images/pta_social_4.png', description:'PTAsocial - Screenshot of an Event Page in `Edit Mode`'},
 			{image:'images/multiple_choice.800x520.png', description: 'Multiple Choice - Proof of concept `mobile first` app made in PhoneGap.'},
 			{image:'images/bin_weevil_airfix_game.png', description: 'Bin Weevils - Airfix Flash game.'},
-			{image:'images/pets_in_spanish.png', description: 'Proof of concept e-learning application - written in Objective-C.'}
+			{image:'images/pets_in_spanish.png', description: 'Proof of concept e-learning application - written in Objective-C.'},
+			{image:'images/tmsw_projects_880x600.png', description: 'Scheduling app for McDonalds using Angular and Firebase. A view of searchable Projects'},
+			{image: 'images/tmsw_project_day_parts_800x600.png', description: 'Scheduling app for McDonalds. A view which allows the user to assign artwork to an in-strore screen.'}
 		];
 
 
