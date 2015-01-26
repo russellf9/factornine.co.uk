@@ -1,5 +1,4 @@
 'use strict';
-'use strict';
 
 var date = angular.module('date', []);
 

@@ -234,6 +234,8 @@
 <script type="text/javascript" src="../bower_components/angular-animate/angular-animate.js"></script>
 <script type="text/javascript" src="../bower_components/angular-touch/angular-touch.js"></script>
 <script type="text/javascript" src="../bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+<script type="text/javascript" src="../bower_components/angular-dragdrop/src/angular-dragdrop.js"></script>
+
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
@@ -244,6 +246,11 @@
 <script type="text/javascript" src="scripts/carousel/slideAnimation.dir.js"></script>
 <script type="text/javascript" src="scripts/carousel/toggle.dir.js"></script>
 <script type="text/javascript" src="scripts/date/date.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/main.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/board/dragDrop.ctrl.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/evaluate.svc.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/instuctions.ctrl.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/master.ctrl.js"></script>
 <!-- endbuild -->
 
 <script type="text/javascript">
@@ -251,13 +258,15 @@
     var skillsDiv = document.getElementById('skills'),
         portfolio = document.getElementById('portfolio'),
         secondApp = document.getElementById('secondApp'),
-        dateDiv = document.getElementById('date');
+        dateDiv = document.getElementById('date'),
+        magicNumbersDiv = document.getElementById('magic-numbers');
 
 
     angular.element(document).ready(function() {
         angular.bootstrap(skillsDiv, ['f9Skills']);
         angular.bootstrap(portfolio, ['carousel','ngAnimate']);
         angular.bootstrap(dateDiv, ['date']);
+        angular.bootstrap(magicNumbersDiv, ['app']);
 
     });
 
