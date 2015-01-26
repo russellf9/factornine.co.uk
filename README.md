@@ -20,6 +20,7 @@ And: [Improving Your Development Workflow with Yeoman](http://blog.teamtreehouse
 	$ grunt serve
 	
 ### Git
+    Using bitbucket to host the site.
     #
     $ git remote add origin git@bitbucket.org:rwenban/factornine.co.uk.git
     $ git push -u origin --all # pushes up the repo and its refs for the first time
