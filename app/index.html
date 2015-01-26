@@ -211,11 +211,10 @@
 	</div>
 	<hr class="featurette-divider">
 
-	<!-- FOOTER -->
-	<footer ng-controller="DateCtrl" ng-cloak>
+	<footer id="date" ng-controller="DateController" ng-cloak>
 		<p class="pull-right"><a href="#">Back to top</a></p>
 
-		<p>&copy; 2014 Factornine Limited &middot; Site last updated: {{date}}</p></p>
+		<p>&copy; 2015 Factornine Limited &middot; Site last updated: {{date}}</p></p>
 	</footer>
 
 </div>
@@ -246,27 +245,33 @@
 <script type="text/javascript" src="scripts/skills/f9Skills.js"></script>
 <script type="text/javascript" src="scripts/skills/skills.ctrl.js"></script>
 <script type="text/javascript" src="scripts/skills/barChart.dir.js"></script>
-<script type="text/javascript" src="scripts/second-app/secondApp.js"></script>
-<script type="text/javascript" src="scripts/date/date.ctrl.js"></script>
+
 
 <script type="text/javascript" src="scripts/test/test.js"></script>
-<script type="text/javascript" src="scripts/carousel/test2.js"></script>
+
 
 <!--<script type="text/javascript" src="scripts/carousel/carousel.js"></script>-->
+<script type="text/javascript" src="scripts/carousel/test2.js"></script>
 <script type="text/javascript" src="scripts/carousel/slideAniamtion.dir.js"></script>
 <script type="text/javascript" src="scripts/carousel/toggle.dir.js"></script>
+
+
+<script type="text/javascript" src="scripts/date/date.js"></script>
 <!-- endbuild -->
 
 <script type="text/javascript">
     // manually boostrapping the second app
     var skillsDiv = document.getElementById('skills'),
         portfolio = document.getElementById('portfolio'),
-        secondApp = document.getElementById('secondApp');
+        secondApp = document.getElementById('secondApp'),
+        dateDiv = document.getElementById('date');
+
 
     angular.element(document).ready(function() {
         angular.bootstrap(skillsDiv, ['f9Skills']);
         angular.bootstrap(portfolio, ['carousel']);
         angular.bootstrap(secondApp, ['secondApp']);
+        angular.bootstrap(dateDiv, ['date']);
 
     });
 
