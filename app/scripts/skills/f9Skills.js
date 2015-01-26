@@ -1,7 +1,7 @@
 'use strict';
 
 // note removed the var app = // to comply with `jshint`
-angular.module('f9Skills', ['ngAnimate', 'ngTouch', 'd3']);
+angular.module('f9Skills', ['ngTouch', 'd3']);
 
 // TODO move to a separate file
 angular.module('d3', [])

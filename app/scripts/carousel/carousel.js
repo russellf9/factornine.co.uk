@@ -1,6 +1,6 @@
 'use strict';
 
-// issue with 'ngAnimate', for some reason
+// issue with 'ngAnimate', and 'ngTouch' ?
 var app = angular.module('carousel', ['ngTouch'])
     .controller('CarouselCtrl', ['$log', '$scope',
         function($log, $scope) {
