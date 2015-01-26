@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="russell@factornine/co.uk">
-	<link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="russell@factornine/co.uk">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-	<title>Factornine - AS to JS</title>
+    <title>Factornine - AS to JS</title>
 
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
-	<script src="../../assets/js/html5shiv.js"></script>
-	<script src="../../assets/js/respond.min.js"></script><![endif]-->	<!-- endbower -->	<!-- endbuild -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script><![endif]-->	<!-- endbower -->	<!-- endbuild -->
 
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
 
-	<!-- build:css styles/vendor.css -->	<!-- bower:css -->
-	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
-	<link rel="stylesheet" href="../bower_components/nvd3/src/nv.d3.css" />
-	<!-- endbower -->	<!-- endbuild -->
+    <!-- build:css styles/vendor.css -->	<!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/nvd3/src/nv.d3.css" />
+    <!-- endbower -->	<!-- endbuild -->
 
-	<!-- build:css(.tmp) styles/main.css -->
-	<link rel="stylesheet" href="styles/carousel.css">
-	<link rel="stylesheet" href="styles/d3.css">
-	<link rel="stylesheet" href="styles/style.css">
-	<!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/d3.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- endbuild -->
 
 </head>
 <!-- NAVBAR
@@ -32,35 +32,35 @@
 
 <body> <!--This is the `root` app-->
 <div class="navbar-wrapper">
-	<div class="container">
-		<!-- DEFAULT BORING NAVIGATION -->
-		<div class="navbar navbar-inverse navbar-static-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Factorine</a>
-				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li><a href="#about">About</a></li>
-						<li><a href="#skills">Skills</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- THE CLASSIC FAT HEADING! -->
-		<div class="jumbotron">
-			<h1 class="text-center">Factornine</h1>
+    <div class="container">
+        <!-- DEFAULT BORING NAVIGATION -->
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Factorine</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- THE CLASSIC FAT HEADING! -->
+        <div class="jumbotron">
+            <h1 class="text-center">Factornine</h1>
 
-			<h2 class="text-center">AS to JS</h2>
+            <h2 class="text-center">AS to JS</h2>
 
-			<p class="lead text-center">Web Development - ActionScript and Angular.js</p>
-		</div>
-	</div>
+            <p class="lead text-center">Web Development - ActionScript and Angular.js</p>
+        </div>
+    </div>
 </div>
 <!-- end of navbar-wrapper -->
 
@@ -69,79 +69,62 @@
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
 <div class="container marketing">
-	<hr class="featurette-divider">
-	<!-- Three columns of text-->
-	<div class="row">
-		<div class="col-lg-4">
-			<img class="img-circle" src="images/espresso_closeup_1.png" alt="espresso">
-
-			<h2>e-learning</h2>
-
-			<p>&nbsp;</p>
-		</div>
-		<div class="col-lg-4">
-			<img class="img-circle" src="images/anchor_close_up_1.png" alt="make a moo!">
-
-			<h2>games</h2>
-
-			<p>&nbsp;</p>
-		</div>
-		<div class="col-lg-4">
-			<img class="img-circle" src="images/ford_closeup_1.png" alt="ford">
-
-			<h2>advertising</h2>
-
-			<p>&nbsp;</p>
-		</div>
-	</div>
-
-	<!-- START THE FEATURETTES -->
-	<hr class="featurette-divider">
-	<!-- ABOUT -->
-	<div class="row featurette" id="about">
-		<div class="col-md-7">
-			<h2 class="featurette-heading">About: <span class="text-muted"> Factornine</span></h2>
-
-			<p class="lead">Factornine Limited is the company which represents Russell Wenban a London based freelance developer.</p>
-
-			<p class="lead">I have been programmer for 15 years and have developed a variety of projects for leading e-learning companies, design agencies and well known brands.</p>
-
-			<p class="lead">Some of the well known brands I've produced for include: BBC Jam, Espresso Education, Ford, Virgin, Nectar and Anchor Butter.</p>
-		</div>
-		<div class="col-md-5">
-			<img class="featurette-image img-responsive" src="images/videotel_closeup_2.png" alt="angular-service">
-		</div>
-	</div>
-	<hr class="featurette-divider">
-
-	<!-- SKILLS -->
-	<div class="row featurette" id="skills" ng-controller="SkillsCtrl">
-		<div class="col-md-7">
-			<div d3-bars bar-height="28" bar-padding="2" data="data" colors="colors"></div>
-		</div>
-		<div class="col-md-5">
-			<h2 class="featurette-heading">Skills: <span class="text-muted">AS to JS</span></h2>
-			<p class="lead">I am a proficient programmer successfully making the transition from the Classical world of ActionScript to the contemporary world of functional JavaScript and Angular.js.</p>
-			<p class="lead">My skills include proficiency in the following: AS3, JavaScript, Angular.js, iOS Development, Ionicframework, HTML5 and CS3, Twitter Bootstrap, UNIX, Grunt and ANT.</p>
-			<p class="lead">I'm recently updated this website to be a `Yeoman web app' and have added a portfolio written in Angular using TweenMax animation and created this dynamic `skills matrix` using d3 in Angular.js.</p>
-			<!--<p class="lead"><a ng-click="animate()">Animate</a> the bars</p>-->
-		</div>
-	</div>
-
     <hr class="featurette-divider">
-    <!-- MAGIC NUMBERS APP -->
-    <div class="row featurette" id="secondApp">
+    <!-- Three columns of text-->
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="img-circle" src="images/espresso_closeup_1.png" alt="espresso">
+
+            <h2>e-learning</h2>
+
+            <p>&nbsp;</p>
+        </div>
+        <div class="col-lg-4">
+            <img class="img-circle" src="images/anchor_close_up_1.png" alt="make a moo!">
+
+            <h2>games</h2>
+
+            <p>&nbsp;</p>
+        </div>
+        <div class="col-lg-4">
+            <img class="img-circle" src="images/ford_closeup_1.png" alt="ford">
+
+            <h2>advertising</h2>
+
+            <p>&nbsp;</p>
+        </div>
+    </div>
+
+    <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+    <!-- ABOUT -->
+    <div class="row featurette" id="about">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">About: <span class="text-muted"> Factornine</span></h2>
+
+            <p class="lead">Factornine Limited is the company which represents Russell Wenban a London based freelance developer.</p>
+
+            <p class="lead">I have been programmer for 15 years and have developed a variety of projects for leading e-learning companies, design agencies and well known brands.</p>
+
+            <p class="lead">Some of the well known brands I've produced for include: BBC Jam, Espresso Education, Ford, Virgin, Nectar and Anchor Butter.</p>
+        </div>
         <div class="col-md-5">
-            <h2 class="featurette-heading">Test</h2>
+            <img class="featurette-image img-responsive" src="images/videotel_closeup_2.png" alt="angular-service">
         </div>
+    </div>
+    <hr class="featurette-divider">
 
-        <div>
-
+    <!-- SKILLS -->
+    <div class="row featurette" id="skills" ng-controller="SkillsCtrl">
+        <div class="col-md-7">
+            <div d3-bars bar-height="28" bar-padding="2" data="data" colors="colors"></div>
         </div>
-
-
-        <div class="col-md-7" style="min-height: 600px; min-width: 600px; border: solid #222;">
-            <h2 class="featurette-heading">TEST</h2>
+        <div class="col-md-5">
+            <h2 class="featurette-heading">Skills: <span class="text-muted">AS to JS</span></h2>
+            <p class="lead">I am a proficient programmer successfully making the transition from the Classical world of ActionScript to the contemporary world of functional JavaScript and Angular.js.</p>
+            <p class="lead">My skills include proficiency in the following: AS3, JavaScript, Angular.js, iOS Development, Ionicframework, HTML5 and CS3, Twitter Bootstrap, UNIX, Grunt and ANT.</p>
+            <p class="lead">I'm recently updated this website to be a `Yeoman web app' and have added a portfolio written in Angular using TweenMax animation and created this dynamic `skills matrix` using d3 in Angular.js.</p>
+            <!--<p class="lead"><a ng-click="animate()">Animate</a> the bars</p>-->
         </div>
     </div>
 
@@ -156,64 +139,64 @@
         </div>
     </div>
 
-	<hr class="featurette-divider">
-	<!-- Portfolio -->
-	<div class="row featurette" id="portfolio" ng-controller="CarouselCtrl">
-		<div class="col-md-12 text-center">
-			<h2 class="featurette-heading">Portfolio: <span class="text-muted">&nbsp;Commercial and Personal</span></h2>
-		</div>
-		<div class="container slider">
-			<img style="vertical-align: middle" ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
-			<a class="arrow prev" ng-click="nextSlide()"></a> <a class="arrow next" ng-click="prevSlide()"></a>
-			<nav class="nav-carousel">
-				<div class="wrapper">
-					<ul class="dots">
-						<li class="dot" ng-repeat="slide in slides">
-							<a ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);"> </a>
-						</li>
-					</ul>
-				</div>
+    <hr class="featurette-divider">
+    <!-- Portfolio -->
+    <div class="row featurette" id="portfolio" ng-controller="CarouselCtrl">
+        <div class="col-md-12 text-center">
+            <h2 class="featurette-heading">Portfolio: <span class="text-muted">&nbsp;Commercial and Personal</span></h2>
+        </div>
+        <div class="container slider">
+            <img style="vertical-align: middle" ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+            <a class="arrow prev" ng-click="nextSlide()"></a> <a class="arrow next" ng-click="prevSlide()"></a>
+            <nav class="nav-carousel">
+                <div class="wrapper">
+                    <ul class="dots">
+                        <li class="dot" ng-repeat="slide in slides">
+                            <a ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);"> </a>
+                        </li>
+                    </ul>
+                </div>
 
-			</nav>
-		</div>
-		<div class="container carousel-description">
-			<p class="text-muted toggle" ng-repeat="slide in slides" ng-if="isCurrentSlideIndex($index)">
-				{{slides[currentIndex].description}}</p>
-		</div>
-	</div>
+            </nav>
+        </div>
+        <div class="container carousel-description">
+            <p class="text-muted toggle" ng-repeat="slide in slides" ng-if="isCurrentSlideIndex($index)">
+                {{slides[currentIndex].description}}</p>
+        </div>
+    </div>
 
-	<hr class="featurette-divider">
-	<!-- CONTACT -->
-	<div class="row" id="contact">
-		<div class="col-lg-12 col-md-12">
-			<h2 class="featurette-heading">Keep in touch: <span class="text-muted">email &amp; social media</span></h2>
+    <hr class="featurette-divider">
+    <!-- CONTACT -->
+    <div class="row" id="contact">
+        <div class="col-lg-12 col-md-12">
+            <h2 class="featurette-heading">Keep in touch: <span class="text-muted">email &amp; social media</span></h2>
 
-			<p class="lead"><br/></p>
+            <p class="lead"><br/></p>
 
-			<div class="col-lg-3 text-center f9-contacts center">
-				<h4>
-					<script type="text/javascript"> document.write("<a href=\"mail" + "to:" + new Array("russell", "factornine.co.uk").join("@") + "\">" + new Array("russell", "factornine.co.uk").join("@") + "</" + "a>"); </script>
-				</h4>
-			</div>
-			<div class="col-lg-3 col-md-3 text-center f9-contacts center">
-				<a href="http://uk.linkedin.com/pub/russell-wenban/18/614/39b" style="text-decoration:none;">
-					<img src="images/linkedin.png" width="48" height="48" alt="View Russell Wenban's LinkedIn profile" border="0"></a>
-			</div>
-			<div class="col-lg-3 col-md-3 text-center f9-contacts center">
-				<a href="http://twitter.com/russellf9"><img src="images/twitter_logo_blue.png" width="48" height="48" alt="f9 twitter"></a>
-			</div>
-			<div class="col-lg-3 col-md-3 text-center f9-contacts center">
-				<a href="http://www.factornine.co.uk/blog/"><img src="images/wordpress_icon.png" width="48" height="48" alt="f9 blog"></a>
-			</div>
-		</div>
-	</div>
-	<hr class="featurette-divider">
+            <div class="col-lg-3 text-center f9-contacts center">
+                <h4>
+                    <script type="text/javascript"> document.write("<a href=\"mail" + "to:" + new Array("russell", "factornine.co.uk").join("@") + "\">" + new Array("russell", "factornine.co.uk").join("@") + "</" + "a>"); </script>
+                </h4>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center f9-contacts center">
+                <a href="http://uk.linkedin.com/pub/russell-wenban/18/614/39b" style="text-decoration:none;">
+                    <img src="images/linkedin.png" width="48" height="48" alt="View Russell Wenban's LinkedIn profile" border="0"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center f9-contacts center">
+                <a href="http://twitter.com/russellf9"><img src="images/twitter_logo_blue.png" width="48" height="48" alt="f9 twitter"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center f9-contacts center">
+                <a href="http://www.factornine.co.uk/blog/"><img src="images/wordpress_icon.png" width="48" height="48" alt="f9 blog"></a>
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
 
-	<footer id="date" ng-controller="DateController" ng-cloak>
-		<p class="pull-right"><a href="#">Back to top</a></p>
+    <footer id="date" ng-controller="DateController" ng-cloak>
+        <p class="pull-right"><a href="#">Back to top</a></p>
 
-		<p>&copy; 2015 Factornine Limited &middot; Site last updated: {{date}}</p></p>
-	</footer>
+        <p>&copy; 2015 Factornine Limited &middot; Site last updated: {{date}}</p></p>
+    </footer>
 
 </div>
 
@@ -245,7 +228,7 @@
 <script type="text/javascript" src="scripts/skills/skills.ctrl.js"></script>
 <script type="text/javascript" src="scripts/skills/barChart.dir.js"></script>
 <script type="text/javascript" src="scripts/carousel/carousel.js"></script>
-<script type="text/javascript" src="scripts/carousel/slideAniamtion.dir.js"></script>
+<script type="text/javascript" src="scripts/carousel/slideAnimation.dir.js"></script>
 <script type="text/javascript" src="scripts/carousel/toggle.dir.js"></script>
 <script type="text/javascript" src="scripts/date/date.js"></script>
 <!-- endbuild -->
@@ -259,9 +242,9 @@
 
 
     angular.element(document).ready(function() {
-        //angular.bootstrap(skillsDiv, ['f9Skills']);
+        angular.bootstrap(skillsDiv, ['f9Skills']);
         angular.bootstrap(portfolio, ['carousel']);
-        //angular.bootstrap(dateDiv, ['date']);
+        angular.bootstrap(dateDiv, ['date']);
 
     });
 
