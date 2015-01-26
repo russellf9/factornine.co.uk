@@ -52,6 +52,13 @@ The grunt task is a bit slow to do everything.
 
 Will build to the _dist_ directory.
 
+
+```
+grunt serve
+```
+
+This will run the local server `http://localhost:9000`
+
 ### Upload
 
 I'm currently using Filezilla, and the site is hosted by [Media Marmot Ltd](http://cp.factornine.co.uk).

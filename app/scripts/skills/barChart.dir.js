@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('f9App').directive('d3Bars', ['$window', '$timeout', 'd3Service',
+angular.module('f9Skills').directive('d3Bars', ['$window', '$timeout', 'd3Service',
 	function ($window, $timeout, d3Service) {
 		return {
 			restrict: 'EA',

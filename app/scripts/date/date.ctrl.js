@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('f9App').controller('DateCtrl', ['$log', '$scope',
+angular.module('f9Skills').controller('DateCtrl', ['$log', '$scope',
 	function ($log, $scope) {
 		//$log.info('A DateCtrl: modified: ',document.lastModified);
 

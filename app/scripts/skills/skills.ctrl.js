@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('f9App').controller('SkillsCtrl', ['$log', '$scope',
+angular.module('f9Skills').controller('SkillsCtrl', ['$log', '$scope',
 	function ($log, $scope) {
 
 		/**

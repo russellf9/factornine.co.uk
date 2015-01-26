@@ -29,7 +29,8 @@
 </head>
 <!-- NAVBAR
 ================================================== -->
-<body ng-app="f9App">
+
+<body> <!--This is the `root` app-->
 <div class="navbar-wrapper">
 	<div class="container">
 		<!-- DEFAULT BORING NAVIGATION -->
@@ -127,6 +128,36 @@
 		</div>
 	</div>
 
+    <hr class="featurette-divider">
+    <!-- MAGIC NUMBERS APP -->
+    <div class="row featurette" id="secondApp">
+        <div class="col-md-5">
+            <h2 class="featurette-heading">Test</h2>
+        </div>
+
+        <div>
+            <div ng-controller="SecondController">
+                <p>2# {{ name }}</p>
+            </div>
+        </div>
+
+
+        <div class="col-md-7" style="min-height: 600px; min-width: 600px; border: solid #222;">
+            <h2 class="featurette-heading">TEST</h2>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- MAGIC NUMBERS APP -->
+    <div class="row featurette" id="magic-numbers">
+        <div class="col-md-5">
+            <h2 class="featurette-heading">Magic-Numbers</h2>
+        </div>
+        <div class="col-md-7" style="min-height: 600px; min-width: 600px; border: solid #222;">
+            <h2 class="featurette-heading">GAME WILL GO HERE</h2>
+        </div>
+    </div>
+
 	<hr class="featurette-divider">
 	<!-- Portfolio -->
 	<div class="row featurette" id="portfolio" ng-controller="CarouselCtrl">
@@ -212,15 +243,34 @@
 <script type="text/javascript" src="../bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
 <!-- endbuild -->
 
-<!-- build:js({app,.tmp}) scripts/main.js -->
-<script type="text/javascript" src="scripts/f9App.js"></script>
-<script type="text/javascript" src="scripts/date/date.ctrl.js"></script>
+<script type="text/javascript" src="scripts/skills/f9Skills.js"></script>
 <script type="text/javascript" src="scripts/skills/skills.ctrl.js"></script>
-<script type="text/javascript" src="scripts/d3/barChart.dir.js"></script>
-<script type="text/javascript" src="scripts/carousel/carousel.ctrl.js"></script>
-<script type="text/javascript" src="scripts/animation/slideAniamtion.dir.js"></script>
-<script type="text/javascript" src="scripts/animation/toggle.dir.js"></script>
+<script type="text/javascript" src="scripts/skills/barChart.dir.js"></script>
+<script type="text/javascript" src="scripts/second-app/secondApp.js"></script>
+<script type="text/javascript" src="scripts/date/date.ctrl.js"></script>
+
+<script type="text/javascript" src="scripts/test/test.js"></script>
+<script type="text/javascript" src="scripts/carousel/test2.js"></script>
+
+<!--<script type="text/javascript" src="scripts/carousel/carousel.js"></script>-->
+<script type="text/javascript" src="scripts/carousel/slideAniamtion.dir.js"></script>
+<script type="text/javascript" src="scripts/carousel/toggle.dir.js"></script>
 <!-- endbuild -->
+
+<script type="text/javascript">
+    // manually boostrapping the second app
+    var skillsDiv = document.getElementById('skills'),
+        portfolio = document.getElementById('portfolio'),
+        secondApp = document.getElementById('secondApp');
+
+    angular.element(document).ready(function() {
+        angular.bootstrap(skillsDiv, ['f9Skills']);
+        angular.bootstrap(portfolio, ['carousel']);
+        angular.bootstrap(secondApp, ['secondApp']);
+
+    });
+
+</script>
 
 </body>
 </html>

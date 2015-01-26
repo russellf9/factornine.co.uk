@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('f9App').animation('.slide-animation', function () {
+angular.module('carousel').animation('.slide-animation', function () {
 	return {
 		beforeAddClass: function (element, className, done) {
 

@@ -1,6 +1,8 @@
 'use strict';
 
-angular.module('f9App').controller('CarouselCtrl', ['$log', '$scope',
+var secondApp = angular.module('Carousel');
+
+secondApp.controller('CarouselCtrl', ['$log', '$scope',
 	function ($log, $scope) {
 		$log.info('CarouselCtrl');
 		$scope.slides = [
