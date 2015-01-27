@@ -48,6 +48,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
+                        <li><a href="#magic-numbers">Game</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -106,16 +107,16 @@
 
             <p class="lead">Factornine Limited is the company which represents Russell Wenban a London based freelance developer.</p>
 
-            <p class="lead">I have been programmer for 15 years and have developed a variety of projects for leading e-learning companies, design agencies and well known brands.</p>
+            <p class="lead">I have been programmer for 15 years and have developed a variety of projects for leading e-learning companies, design agencies and start-ups.</p>
 
-            <p class="lead">Some of the well known brands I've produced for include: BBC Jam, Espresso Education, Ford, Virgin, Nectar and Anchor Butter.</p>
+            <p class="lead">Some of the well known brands I've produced for include: BBC Jam, Espresso Education, Ford, Virgin, Nectar, Videotel, Anchor Butter and McDonald's.</p>
         </div>
         <div class="col-md-5">
             <img class="featurette-image img-responsive" src="images/videotel_closeup_2.png" alt="angular-service">
         </div>
     </div>
-    <hr class="featurette-divider">
 
+    <hr class="featurette-divider">
     <!-- SKILLS -->
     <div class="row featurette" id="skills" ng-controller="SkillsCtrl">
         <div class="col-md-7">
@@ -124,7 +125,7 @@
         <div class="col-md-5">
             <h2 class="featurette-heading">Skills: <span class="text-muted">AS to JS</span></h2>
             <p class="lead">I am a proficient programmer successfully making the transition from the Classical world of ActionScript to the contemporary world of functional JavaScript and Angular.js.</p>
-            <p class="lead">My skills include proficiency in the following: AS3, JavaScript, Angular.js, iOS Development, Ionicframework, HTML5 and CS3, Twitter Bootstrap, UNIX, Grunt and ANT.</p>
+            <p class="lead">My skills include proficiency in the following: AS3, JavaScript, Angular.js, iOS Development, Ionicframework, HTML5 and CS3, Twitter Bootstrap, UNIX, Grunt and ANT. (And, now Gulp!).</p>
             <p class="lead">I'm recently updated this website to be a `Yeoman web app' and have added a portfolio written in Angular using TweenMax animation and created this dynamic `skills matrix` using d3 in Angular.js.</p>
             <!--<p class="lead"><a ng-click="animate()">Animate</a> the bars</p>-->
         </div>
@@ -134,10 +135,17 @@
     <!-- MAGIC NUMBERS APP -->
     <div class="row featurette" id="magic-numbers">
         <div class="col-md-5">
-            <h2 class="featurette-heading">Magic-Numbers</h2>
+            <h2 class="featurette-heading">Magic Square<span class="text-muted"> Game</span></h2>
+            <p class="lead">I've continued my interest in creating e-learning games by creating a new game for my portfolio.</p>
+            <p class="lead">The <em>Magic Square Puzzle</em> is a classic logic game, where each row, column, and diagonal adds up to the same number. This number is the <em>Magic Number</em>.
+            </p>
+            <p class="lead">My version of this puzzle is written in Angular and is an open source project hosted on Github. See: <a href="https://github.com/russellf9/magic-squares">Magic Squares</a>.
+            </p>
+            <p class="lead">The version here is the first basic <em>MVP</em>, I expect to add enhancements shortly like adding levels and improving the display.
+            </p>
         </div>
         <div class="col-md-7" style="min-height: 600px; min-width: 600px; border: solid #222;">
-            <ng-include src="'/partials/game.html'"></ng-include>
+            <ng-include src="'partials/game.html'"></ng-include>
         </div>
     </div>
 
@@ -192,11 +200,11 @@
             </div>
         </div>
     </div>
-    <hr class="featurette-divider">
 
+    <hr class="featurette-divider">
+    <!--CREATION DATE-->
     <footer id="date" ng-controller="DateController" ng-cloak>
         <p class="pull-right"><a href="#">Back to top</a></p>
-
         <p>&copy; 2015 Factornine Limited &middot; Site last updated: {{date}}</p></p>
     </footer>
 
@@ -248,7 +256,7 @@
 <script type="text/javascript" src="scripts/carousel/slideAnimation.dir.js"></script>
 <script type="text/javascript" src="scripts/carousel/toggle.dir.js"></script>
 <script type="text/javascript" src="scripts/date/date.js"></script>
-<script type="text/javascript" src="scripts/magic-squares/main.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/magicSquares.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/board/dragDrop.ctrl.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/evaluate.svc.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/instructions.ctrl.js"></script>
@@ -260,7 +268,7 @@
     $(function() {
         $.event.props.push('dataTransfer');
     });
-    // manually boostrapping all the required apps
+    // manually bootstrapping all the required apps
     var skillsDiv = document.getElementById('skills'),
         portfolio = document.getElementById('portfolio'),
         secondApp = document.getElementById('secondApp'),
@@ -271,7 +279,7 @@
         angular.bootstrap(skillsDiv, ['f9Skills']);
         angular.bootstrap(portfolio, ['carousel','ngAnimate']);
         angular.bootstrap(dateDiv, ['date']);
-        angular.bootstrap(magicNumbersDiv, ['magic-squares', 'ngDragDrop', 'ngAnimate']);
+        angular.bootstrap(magicNumbersDiv, ['magicsquares', 'ngDragDrop', 'ngAnimate']);
     });
 
 </script>

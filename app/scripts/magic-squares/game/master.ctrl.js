@@ -1,7 +1,7 @@
 'use strict';
 
 //controller for single project view
-angular.module('magic-squares').controller('Master', ['$scope', '$rootScope', 'Evaluate', function($scope, $rootScope, Evaluate) {
+angular.module('magicsquares').controller('Master', ['$scope', '$rootScope', 'Evaluate', function($scope, $rootScope, Evaluate) {
     console.log('hi from the Master!');
 
     var self = this;

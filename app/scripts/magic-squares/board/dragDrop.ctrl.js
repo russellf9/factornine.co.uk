@@ -1,7 +1,7 @@
 'use strict';
 
 //controller for single project view
-angular.module('magic-squares').controller('DragDrop', ['$scope', '$timeout', '_', 'Evaluate', function($scope, $timeout, _, Evaluate) {
+angular.module('magicsquares').controller('DragDrop', ['$scope', '$timeout', '_', 'Evaluate', function($scope, $timeout, _, Evaluate) {
 
     console.log('hi from the DragDrop!');
 

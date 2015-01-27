@@ -5,7 +5,7 @@
  */
 
 
-angular.module('magic-squares').service('Evaluate', ['_', '$q', '$rootScope', function(_, $q, $rootScope) {
+angular.module('magicsquares').service('Evaluate', ['_', '$q', '$rootScope', function(_, $q, $rootScope) {
 
     var _numberOfSquares = 9,
         _grandTotal = 45,

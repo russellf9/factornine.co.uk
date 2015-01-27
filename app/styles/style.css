@@ -1,4 +1,9 @@
-
+.f9-contacts {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 50px;
+    /*border: 2px solid deeppink;*/
+}
 
 .slider {
     width: 840px;
