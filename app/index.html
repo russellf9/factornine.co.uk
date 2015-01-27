@@ -18,12 +18,14 @@
     <!-- build:css styles/vendor.css -->	<!-- bower:css -->
 	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
 	<link rel="stylesheet" href="../bower_components/nvd3/src/nv.d3.css" />
+    <link rel="stylesheet" href="../bower_components/jquery-ui/themes/ui-lightness/jquery-ui.css" />
 	<!-- endbower -->	<!-- endbuild -->
 
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/carousel.css">
     <link rel="stylesheet" href="styles/d3.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 
 </head>
@@ -135,7 +137,7 @@
             <h2 class="featurette-heading">Magic-Numbers</h2>
         </div>
         <div class="col-md-7" style="min-height: 600px; min-width: 600px; border: solid #222;">
-            <h2 class="featurette-heading">GAME WILL GO HERE</h2>
+            <ng-include src="'/partials/game.html'"></ng-include>
         </div>
     </div>
 
@@ -207,6 +209,7 @@
 <!-- build:js scripts/vendor.js --><!-- bower:js -->
 <script src="../bower_components/modernizr/modernizr.js"></script>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
 <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
 <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
 <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
@@ -225,6 +228,7 @@
 <script src="../bower_components/nvd3/nv.d3.js"></script>
 <script src="../bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
 <script src="../bower_components/lodash/lodash.js"></script>
+
 <!-- endbower --><!-- endbuild -->
 
 <!-- Angular and app dependencies -->
@@ -249,24 +253,32 @@
 <script type="text/javascript" src="scripts/magic-squares/main.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/board/dragDrop.ctrl.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/evaluate.svc.js"></script>
-<script type="text/javascript" src="scripts/magic-squares/game/instuctions.ctrl.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/instructions.ctrl.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/master.ctrl.js"></script>
 <!-- endbuild -->
 
 <script type="text/javascript">
+
+    $(function() {
+        console.log( "A ready!" );
+        $.event.props.push('dataTransfer');
+    });
     // manually boostrapping the second app
     var skillsDiv = document.getElementById('skills'),
         portfolio = document.getElementById('portfolio'),
         secondApp = document.getElementById('secondApp'),
         dateDiv = document.getElementById('date'),
-        magicNumbersDiv = document.getElementById('magic-numbers');
+        magicNumbersDiv = document.getElementById('magic-numbers'),
+        body = document.getElementsByTagName('body')[0];
 
 
     angular.element(document).ready(function() {
+        console.log( "B ready!" );
+       // angular.bootstrap(body, ['ngDragDrop']);
         angular.bootstrap(skillsDiv, ['f9Skills']);
         angular.bootstrap(portfolio, ['carousel','ngAnimate']);
         angular.bootstrap(dateDiv, ['date']);
-        angular.bootstrap(magicNumbersDiv, ['app']);
+        angular.bootstrap(magicNumbersDiv, ['magic-squares', 'ngDragDrop', 'ngAnimate']);
 
     });
 

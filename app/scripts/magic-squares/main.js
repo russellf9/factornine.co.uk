@@ -18,12 +18,15 @@
 //            });
     }
 
-    angular
-        .module('app', ['ngAnimate', 'ngDragDrop'])
+
+    var app = angular
+        .module('magic-squares', [])
         .config(config).
+
+
         run(['_', function(_) {
-             console.log('im running!');
-    }])
+             console.log('I`m running!');
+        }])
 // I provide an injectable (and extended) version of the underscore / lodash lib.
         .factory(
         '_',
