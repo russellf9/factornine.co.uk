@@ -228,7 +228,6 @@
 <script src="../bower_components/nvd3/nv.d3.js"></script>
 <script src="../bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
 <script src="../bower_components/lodash/lodash.js"></script>
-
 <!-- endbower --><!-- endbuild -->
 
 <!-- Angular and app dependencies -->
@@ -239,7 +238,6 @@
 <script type="text/javascript" src="../bower_components/angular-touch/angular-touch.js"></script>
 <script type="text/javascript" src="../bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
 <script type="text/javascript" src="../bower_components/angular-dragdrop/src/angular-dragdrop.js"></script>
-
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
@@ -260,26 +258,20 @@
 <script type="text/javascript">
 
     $(function() {
-        console.log( "A ready!" );
         $.event.props.push('dataTransfer');
     });
-    // manually boostrapping the second app
+    // manually boostrapping all the required apps
     var skillsDiv = document.getElementById('skills'),
         portfolio = document.getElementById('portfolio'),
         secondApp = document.getElementById('secondApp'),
         dateDiv = document.getElementById('date'),
-        magicNumbersDiv = document.getElementById('magic-numbers'),
-        body = document.getElementsByTagName('body')[0];
-
+        magicNumbersDiv = document.getElementById('magic-numbers');
 
     angular.element(document).ready(function() {
-        console.log( "B ready!" );
-       // angular.bootstrap(body, ['ngDragDrop']);
         angular.bootstrap(skillsDiv, ['f9Skills']);
         angular.bootstrap(portfolio, ['carousel','ngAnimate']);
         angular.bootstrap(dateDiv, ['date']);
         angular.bootstrap(magicNumbersDiv, ['magic-squares', 'ngDragDrop', 'ngAnimate']);
-
     });
 
 </script>

@@ -9,6 +9,9 @@
 /*h6 { font-size: 18px; font-size: 1.8rem;  } *//* =18px */
 
 
+h6 { font-size: 18px; font-size: 1.8rem;  }
+
+
 .center-text {
     width: 100%;
     text-align: center;
@@ -30,14 +33,12 @@
     left: 0;
     margin: 0;
     width: 500px;
-    height: 45px;
-
-    /*background-color: rgba(0,255,0,0.1);*/
+    height: 80px;
 }
 
 .drag-drop {
     position: absolute;
-    top: 45px;
+    top: 80px;
     left: 0;
     width: 500px;
     height: 405px;
@@ -195,6 +196,8 @@
 pre strong {
     font-size:12pt;
 }
+
+
 
 
 

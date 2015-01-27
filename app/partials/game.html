@@ -1,60 +1,64 @@
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12 vertical-center">
+        <div class="container" style="position: relative; width: 500px; height: 500px; height: 600px;">
 
-
-        <div class="game-container" ng-controller="Master as master">
-            <div class="instructions" ng-controller="Instructions as instructions">
+            <div class="game-container" ng-controller="Master as master"
+                 style="min-width: 500px; width: 500px; margin: auto; margin-top: 50px;">
+                <div class="instructions" ng-controller="Instructions as instructions">
                 <span ng-if='!master.complete'>
-                    <h6 class="center-text" >Magic Square Puzzle</h6>
-                    <p>{{master.instructions}}</p>
+                    <h6 class="center-text">Magic Square Puzzle</h6>
+                    <p class="center-text">{{master.instructions}}</p>
                 </span>
-                <h6 class="center-text" ng-if="master.allCorrect">Well done all correct!</h6>
-                <h6 class="center-text" ng-if='master.complete && !master.allCorrect'>Try again</h6>
+                    <h6 class="center-text" ng-if="master.allCorrect">Well done all correct!</h6>
+                    <h6 class="center-text" ng-if='master.complete && !master.allCorrect'>Try again</h6>
 
-            </div>
-
-
-            <div class="drag-drop" ng-controller="DragDrop as dragDrop">
-
-
-
-                <div class="drop-zone">
-                    <ul id="triple" class="drop-board">
-                        <li class="square drop-slot" ng-repeat="drop in dragDrop.dropTargets track by $index">
-                            <div class="btn btn-droppable square" data-drop="true" ng-model='dragDrop.selectedItems'
-                                jqyoui-droppable="{index: {{$index}}, onDrop:'dragDrop.dropCallback($index)',onOver: 'dragDrop.overCallback(data-drag)', onOut: 'dragDrop.outCallback($index, data-drag)'}">
-                                <div class="btn btn-info square btn-draggable" ng-show="dragDrop.selectedItems[$index].title"
-                                     data-drag="{{dragDrop.selectedItems[$index].drag}}" data-jqyoui-options="{revert: 'invalid'}"
-                                     ng-model="dragDrop.selectedItems"
-                                     jqyoui-draggable="{index: {{$index}},placeholder:true,animate:false}">
-                                    <span class="drag-text"><h1>{{dragDrop.selectedItems[$index].title}}</h1></span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
 
 
-                <div class="drag-home">
-                    <div class="btn btn-droppable square drag-slot" style='margin-left:10px;' ng-repeat="item in dragDrop.list2 track by $index" data-drop="true"
-                         ng-model='dragDrop.list2' jqyoui-droppable="{index: {{$index}}}">
-                        <div class="btn btn-info btn-draggable square" data-drag="{{item.drag}}"
-                             data-jqyoui-options="{revert: 'invalid'}" ng-model="dragDrop.list2"
-                             jqyoui-draggable="{index: {{$index}},placeholder:true,animate:false, onStart:'dragDrop.startCallback(item, $index)', onStop: 'dragDrop.stopCallback', onDrag: 'dragDrop.dragCallback'}"
-                             ng-hide="!item.title"><span class="drag-text"><h1>{{item.title}}</h1></span>
+                <div class="drag-drop" ng-controller="DragDrop as dragDrop">
+
+
+                    <div class="drop-zone">
+                        <ul id="triple" class="drop-board">
+                            <li class="square drop-slot" ng-repeat="drop in dragDrop.dropTargets track by $index">
+                                <div class="btn btn-droppable square" data-drop="true" ng-model='dragDrop.selectedItems'
+                                     jqyoui-droppable="{index: {{$index}}, onDrop:'dragDrop.dropCallback($index)',onOver: 'dragDrop.overCallback(data-drag)', onOut: 'dragDrop.outCallback($index, data-drag)'}">
+                                    <div class="btn btn-info square btn-draggable"
+                                         ng-show="dragDrop.selectedItems[$index].title"
+                                         data-drag="{{dragDrop.selectedItems[$index].drag}}"
+                                         data-jqyoui-options="{revert: 'invalid'}"
+                                         ng-model="dragDrop.selectedItems"
+                                         jqyoui-draggable="{index: {{$index}},placeholder:true,animate:false}">
+                                        <span class="drag-text"><h1>{{dragDrop.selectedItems[$index].title}}</h1></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="drag-home">
+                        <div class="btn btn-droppable square drag-slot" style='margin-left:10px;'
+                             ng-repeat="item in dragDrop.list2 track by $index" data-drop="true"
+                             ng-model='dragDrop.list2' jqyoui-droppable="{index: {{$index}}}">
+                            <div class="btn btn-info btn-draggable square" data-drag="{{item.drag}}"
+                                 data-jqyoui-options="{revert: 'invalid'}" ng-model="dragDrop.list2"
+                                 jqyoui-draggable="{index: {{$index}},placeholder:true,animate:false, onStart:'dragDrop.startCallback(item, $index)', onStop: 'dragDrop.stopCallback', onDrag: 'dragDrop.dragCallback'}"
+                                 ng-hide="!item.title"><span class="drag-text"><h1>{{item.title}}</h1></span>
+                            </div>
                         </div>
                     </div>
+
+
                 </div>
 
 
+                <div class="game-controls">
+                </div>
+
             </div>
-
-
-
-            <div class="game-controls">
-            </div>
-
         </div>
+
 
     </div>
 
