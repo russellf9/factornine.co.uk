@@ -1,15 +1,6 @@
-/* http://snook.ca/archives/html_and_css/font-size-with-rem */
-/*html { font-size: 62.5%; }*/
-/*body { font-size: 14px; font-size: 1.4rem;  } *//* =14px */
-/*h1 { font-size: 48px; font-size: 4.8rem;  } *//* =48px */
-/*h2 { font-size: 42px; font-size: 4.2rem;  } *//* =42px */
-/*h3 { font-size: 36px; font-size: 3.6rem;  } *//* =36px */
-/*h4 { font-size: 32px; font-size: 3.2rem;  } *//* =32px */
-/*h5 { font-size: 24px; font-size: 2.4rem;  } *//* =24px */
-/*h6 { font-size: 18px; font-size: 1.8rem;  } *//* =18px */
 
 
-h6 { font-size: 18px; font-size: 1.8rem;  }
+h6 { font-size: 18px; font-size: 1.8rem;  } /* =18px */
 
 
 .center-text {
@@ -18,13 +9,16 @@ h6 { font-size: 18px; font-size: 1.8rem;  }
 }
 
 .game-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 500px;
-    height: 500px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    width: 600px;
+    height: 600px;
 
-    border: solid 1px #222;
+    /*border: solid 1px #222;*/
+    background-color: rgba(254,254,255,0);
+
+    /*background-color: rgba(100,100,100,0.05);*/
 }
 
 .instructions {
@@ -32,81 +26,112 @@ h6 { font-size: 18px; font-size: 1.8rem;  }
     top: 0;
     left: 0;
     margin: 0;
-    width: 500px;
-    height: 80px;
+    width: 600px;
+    height: 75px;
+
+    /*background-color: rgba(100,100,100,0.05);*/
 }
 
 .drag-drop {
     position: absolute;
-    top: 80px;
+    top: 75px;
     left: 0;
-    width: 500px;
-    height: 405px;
+    width: 600px;
+    height: 480px;
 
-    /*border: solid 1px darkgreen;*/
+    /*border: solid 3px darkgreen;*/
 }
 
 .drop-zone {
+    z-index: 1;
     position: absolute;
     top: 0;
     left: 0;
-    width: 500px;
-    height: 245px;
+    width: 600px;
+    height: 290px;
 
     /*border: solid 1px slategrey;*/
-    /*background-color: rgba(0,255,0,0.1);*/
+    /*background-color: rgba(100,100,100,0.05);*/
 }
 
+.drop-zone-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 290px;
+
+    /*border: solid 1px darkred;*/
+}
+
+.drop-zone-overlay-one {
+    z-index: -1;
+    /*border: solid 1px darkred;*/
+}
+
+.drop-zone-overlay-two {
+    z-index: -2;
+
+    /*border: solid 1px darkblue;*/
+}
+
+.drop-zone-overlay-three {
+    z-index: -3;
+
+    /*border: solid 1px darkblue;*/
+}
+
+
+
 .drag-home {
+    z-index: 99;
     position: absolute;
 
-    top: 245px;
+    top: 294px;
     left: 0;
 
-    width: 500px;
-    height: 160px;
+    width: 600px;
+    height: 190px;
     /* quick positioning hack */
+    padding-top: 8px;
     padding-left: 35px;
 
-    /*border: solid 1px gold;*/
+    /*border: solid 2px gold;*/
+}
+
+.drag-home-bgd {
+    z-index: -4;
+    position: absolute;
+
+    top: 294px;
+    left: 0;
+
+    width: 600px;
+    height: 190px;
+    /* quick positioning hack */
+    padding-top: 8px;
+    padding-left: 35px;
 }
 
 .game-controls {
     position: absolute;
     left: 0;
-    top: 450px;
-    width: 500px;
-    height: 50px;
+    bottom: 0;
+    width: 600px;
+    height: 45px;
 
     /*border: solid 2px gold;*/
-}
 
-
-
-
-/* TODO apply similar opacity effect on drag */
-.lvl-target {
-    /* applied to all drop targets when a drag operation begins, used to indicate drop targets on a page */
-    background-color: #ddd;
-    opacity: .5;
-}
-
-[draggable] {
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    /* Required to make elements draggable in old WebKit */
-    -khtml-user-drag: element;
-    -webkit-user-drag: element;
-    cursor: move;
-    border:1px solid black;
+    /*background-color: rgba(0,75,125,0.05);*/
 }
 
 
 .btn-droppable {
     padding: 0;
     /*z-index: -1;*/
+    /*hack so drag item fits over*/
+    margin-top: -2px;
+    margin-left: -2px;
     cursor: default;
 }
 
@@ -135,15 +160,25 @@ h6 { font-size: 18px; font-size: 1.8rem;  }
     padding-top: 3px;
     padding-left: 22px;
     /*padding-right: 10px;*/
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 
-    border: solid 1px #222;
+    /*border: solid 1px #999;*/
 }
 
 .drop-slot {
     display: inline-block;
-    border: dashed 1px darkgreen;
+    border: dotted 1px darkgreen;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 75px !important;
+    height: 75px !important;
+}
+
+.slot-empty {
+    display: inline-block;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -152,11 +187,64 @@ h6 { font-size: 18px; font-size: 1.8rem;  }
 }
 
 .drag-slot {
-    border:1px #999 solid;
     /* bit hacky now */
     margin-top: 3px;
     margin-bottom: 3px;
+    padding: 0;
+
+    border:1px #d3d3d3 solid;
 }
+
+.drag-slot-empty {
+    padding: 0;
+    border:1px #d3d3d3 solid;
+}
+/*hack display for the totals*/
+.drop-display {
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+    /*width: 75px !important;*/
+
+    /*border:1px #999 solid;*/
+}
+
+.row-indicator {
+    height: 100%;
+    /* bit hacky now */
+    padding-top: 20px;
+
+    /*border:1px #229 solid;*/
+}
+
+.row-indicator-left {
+    margin-left: -19px;
+}
+
+.column-indicator {
+    text-align: center;
+}
+.column-indicator p{
+    margin-top: -25px;
+
+    /*border:1px #229 solid;*/
+}
+.column-indicator-bottom {
+    margin-top: 190px;
+
+    /*border:1px #229 solid;*/
+}
+.column-indicator-bottom p {
+    margin-top: 25px;
+}
+.diagonal-left {
+    margin-left: -55px;
+}
+.diagonal-right {
+    margin-left: 158px;
+}
+
+
 .drag-text {
     width: 75px;
     height: 75px;
@@ -199,8 +287,6 @@ pre strong {
 
 
 
-
-
 /*------------------------------------*\
     LISTS
     See: http://csswizardry.com/2010/02/mutiple-column-lists-using-one-ul/
@@ -227,3 +313,10 @@ li{
 #triple li	{ width:33.333%; }
 #quad li		{ width:25%; }
 #six li		{ width:16.666%; }
+
+#single li	{ width:100%;}
+
+
+.single li	{ width:100%;}
+.triple li { width:33.333%; }
+.double li { width:50%; }

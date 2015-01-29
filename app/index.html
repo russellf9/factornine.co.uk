@@ -11,15 +11,15 @@
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
     <script src="../../assets/js/html5shiv.js"></script>
-    <script src="../../assets/js/respond.min.js"></script><![endif]-->	<!-- endbower -->	<!-- endbuild -->
+    <script src="../../assets/js/respond.min.js"></script><![endif]-->    <!-- endbower -->    <!-- endbuild -->
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
 
-    <!-- build:css styles/vendor.css -->	<!-- bower:css -->
-	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
-	<link rel="stylesheet" href="../bower_components/nvd3/src/nv.d3.css" />
+    <!-- build:css styles/vendor.css -->    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../bower_components/nvd3/src/nv.d3.css"/>
     <link rel="stylesheet" href="../bower_components/jquery-ui/themes/ui-lightness/jquery-ui.css"/>
-	<!-- endbower -->	<!-- endbuild -->
+    <!-- endbower -->    <!-- endbuild -->
 
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/carousel.css">
@@ -105,11 +105,14 @@
         <div class="col-md-7">
             <h2 class="featurette-heading">About: <span class="text-muted"> Factornine</span></h2>
 
-            <p class="lead">Factornine Limited is the company which represents Russell Wenban a London based freelance developer.</p>
+            <p class="lead">Factornine Limited is the company which represents Russell Wenban a London based freelance
+                developer.</p>
 
-            <p class="lead">I have been programmer for 15 years and have developed a variety of projects for leading e-learning companies, design agencies and start-ups.</p>
+            <p class="lead">I have been programmer for 15 years and have developed a variety of projects for leading
+                e-learning companies, design agencies and start-ups.</p>
 
-            <p class="lead">Some of the well known brands I've produced for include: BBC Jam, Espresso Education, Ford, Virgin, Nectar, Videotel, Anchor Butter and McDonald's.</p>
+            <p class="lead">Some of the well known brands I've produced for include: BBC Jam, Espresso Education, Ford,
+                Virgin, Nectar, Videotel, Anchor Butter and McDonald's.</p>
         </div>
         <div class="col-md-5">
             <img class="featurette-image img-responsive" src="images/videotel_closeup_2.png" alt="angular-service">
@@ -124,9 +127,17 @@
         </div>
         <div class="col-md-5">
             <h2 class="featurette-heading">Skills: <span class="text-muted">AS to JS</span></h2>
-            <p class="lead">I am a proficient programmer successfully making the transition from the Classical world of ActionScript to the contemporary world of functional JavaScript and Angular.js.</p>
-            <p class="lead">My skills include proficiency in the following: AS3, JavaScript, Angular.js, iOS Development, Ionicframework, HTML5 and CS3, Twitter Bootstrap, UNIX, Grunt and ANT. (And, now Gulp!).</p>
-            <p class="lead">I'm recently updated this website to be a `Yeoman web app' and have added a portfolio written in Angular using TweenMax animation and created this dynamic `skills matrix` using d3 in Angular.js.</p>
+
+            <p class="lead">I am a proficient programmer successfully making the transition from the Classical world of
+                ActionScript to the contemporary world of functional JavaScript and Angular.js.</p>
+
+            <p class="lead">My skills include proficiency in the following: AS3, JavaScript, Angular.js, iOS
+                Development, Ionicframework, HTML5 and CS3, Twitter Bootstrap, UNIX, Grunt and ANT. (And, now
+                Gulp!).</p>
+
+            <p class="lead">I'm recently updated this website to be a `Yeoman web app' and have added a portfolio
+                written in Angular using TweenMax animation and created this dynamic `skills matrix` using d3 in
+                Angular.js.</p>
             <!--<p class="lead"><a ng-click="animate()">Animate</a> the bars</p>-->
         </div>
     </div>
@@ -136,16 +147,25 @@
     <div class="row featurette" id="magic-numbers">
         <div class="col-md-5">
             <h2 class="featurette-heading">Magic Square<span class="text-muted"> Game</span></h2>
-            <p class="lead">I've continued my interest in creating e-learning games by creating a new game for my portfolio.</p>
-            <p class="lead">The <em>Magic Square Puzzle</em> is a classic logic game, where each row, column, and diagonal adds up to the same number. This number is the <em>Magic Number</em>.
+
+            <p class="lead">I've continued my interest in creating e-learning games by creating a new game for my
+                portfolio.</p>
+
+            <p class="lead">The <em>Magic Square Puzzle</em> is a classic logic game, where each row, column, and
+                diagonal adds up to the same number. This number is the <em>Magic Number</em>.
             </p>
-            <p class="lead">My version of this puzzle is written in Angular and is an open source project hosted on Github. See: <a href="https://github.com/russellf9/magic-squares">Magic Squares</a>.
+
+            <p class="lead">My version of this puzzle is written in Angular and is an open source project hosted on
+                Github. See: <a href="https://github.com/russellf9/magic-squares">Magic Squares</a>.
             </p>
-            <p class="lead">The version here is the first basic <em>MVP</em>, I expect to add enhancements shortly like adding levels and improving the display.
+
+            <p class="lead">I've added a couple of enhancements to the original basic app, including adding `hint`, 'clear` and `check` buttons.
             </p>
         </div>
-        <div class="col-md-7" style="min-height: 600px; min-width: 600px; border: solid #222;">
-            <ng-include src="'partials/game.html'"></ng-include>
+        <div class="col-md-7" style="min-height: 600px; min-width: 600px; border: solid darkgray;">
+            <row class="text-center">
+                <ng-include src="'partials/game.html'"></ng-include>
+            </row>
         </div>
     </div>
 
@@ -156,13 +176,16 @@
             <h2 class="featurette-heading">Portfolio: <span class="text-muted">&nbsp;Commercial and Personal</span></h2>
         </div>
         <div class="container slider">
-            <img style="vertical-align: middle" ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage" ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+            <img style="vertical-align: middle" ng-repeat="slide in slides"
+                 class="slide slide-animation nonDraggableImage" ng-hide="!isCurrentSlideIndex($index)"
+                 ng-src="{{slide.image}}">
             <a class="arrow prev" ng-click="nextSlide()"></a> <a class="arrow next" ng-click="prevSlide()"></a>
             <nav class="nav-carousel">
                 <div class="wrapper">
                     <ul class="dots">
                         <li class="dot" ng-repeat="slide in slides">
-                            <a ng-class="{'active':isCurrentSlideIndex($index)}" ng-click="setCurrentSlideIndex($index);"> </a>
+                            <a ng-class="{'active':isCurrentSlideIndex($index)}"
+                               ng-click="setCurrentSlideIndex($index);"> </a>
                         </li>
                     </ul>
                 </div>
@@ -205,6 +228,7 @@
     <!--CREATION DATE-->
     <footer id="date" ng-controller="DateController" ng-cloak>
         <p class="pull-right"><a href="#">Back to top</a></p>
+
         <p>&copy; 2015 Factornine Limited &middot; Site last updated: {{date}}</p></p>
     </footer>
 
@@ -243,7 +267,8 @@
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="../bower_components/angular-animate/angular-animate.js"></script>
 <script type="text/javascript" src="../bower_components/angular-touch/angular-touch.js"></script>
-<script type="text/javascript" src="../bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+<script type="text/javascript"
+        src="../bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
 <script type="text/javascript" src="../bower_components/angular-dragdrop/src/angular-dragdrop.js"></script>
 <script src="../bower_components/lodash/lodash.js"></script>
 <script src="../bower_components/angular-filter/dist/angular-filter.js"></script>
@@ -258,15 +283,12 @@
 <script type="text/javascript" src="scripts/carousel/slideAnimation.dir.js"></script>
 <script type="text/javascript" src="scripts/carousel/toggle.dir.js"></script>
 <script type="text/javascript" src="scripts/date/date.js"></script>
-
 <script type="text/javascript" src="scripts/magic-squares/magicSquares.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/dragDrop.ctrl.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/model.svc.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/instructions.ctrl.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/master.ctrl.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/text.svc.js"></script>
-
-
 <!-- endbuild -->
 
 <script type="text/javascript">
@@ -276,17 +298,16 @@
     });
     // manually bootstrapping all the required apps
     var skillsDiv = document.getElementById('skills'),
-        portfolio = document.getElementById('portfolio'),
-        secondApp = document.getElementById('secondApp'),
-        dateDiv = document.getElementById('date'),
-        magicNumbersDiv = document.getElementById('magic-numbers');
+            portfolio = document.getElementById('portfolio'),
+            secondApp = document.getElementById('secondApp'),
+            dateDiv = document.getElementById('date'),
+            magicNumbersDiv = document.getElementById('magic-numbers');
 
     angular.element(document).ready(function() {
         angular.bootstrap(skillsDiv, ['f9Skills']);
-        angular.bootstrap(portfolio, ['carousel','ngAnimate']);
+        angular.bootstrap(portfolio, ['carousel', 'ngAnimate']);
         angular.bootstrap(dateDiv, ['date']);
         angular.bootstrap(magicNumbersDiv, ['app', 'ngDragDrop', 'ngAnimate', 'angular.filter', 'ngTouch']);
-        // 'angular.filter', 'ngTouch'
     });
 
 </script>
