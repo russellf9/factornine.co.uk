@@ -1,7 +1,11 @@
-'use strict';
+(function() {
+    'use strict';
 
-//controller for single project view
-angular.module('magicsquares').controller('Instructions', [function() {
-    console.log('hi from the instructions!');
-    this.test = 'From Instructions';
-}]);
+    /**
+     * A Controller for the games instructions
+     */
+    angular.module('app').controller('Instructions', ['Game', 'Text', function(Game, Text) {
+        this.instructions = Text.instructions + Game.magicNumber() + '.';
+    }]);
+}());
+

@@ -18,7 +18,7 @@
     <!-- build:css styles/vendor.css -->	<!-- bower:css -->
 	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
 	<link rel="stylesheet" href="../bower_components/nvd3/src/nv.d3.css" />
-    <link rel="stylesheet" href="../bower_components/jquery-ui/themes/ui-lightness/jquery-ui.css" />
+    <link rel="stylesheet" href="../bower_components/jquery-ui/themes/ui-lightness/jquery-ui.css"/>
 	<!-- endbower -->	<!-- endbuild -->
 
     <!-- build:css(.tmp) styles/main.css -->
@@ -235,7 +235,6 @@
 <script src="../bower_components/d3/d3.js"></script>
 <script src="../bower_components/nvd3/nv.d3.js"></script>
 <script src="../bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
-<script src="../bower_components/lodash/lodash.js"></script>
 <!-- endbower --><!-- endbuild -->
 
 <!-- Angular and app dependencies -->
@@ -246,6 +245,9 @@
 <script type="text/javascript" src="../bower_components/angular-touch/angular-touch.js"></script>
 <script type="text/javascript" src="../bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
 <script type="text/javascript" src="../bower_components/angular-dragdrop/src/angular-dragdrop.js"></script>
+<script src="../bower_components/lodash/lodash.js"></script>
+<script src="../bower_components/angular-filter/dist/angular-filter.js"></script>
+<script src="../bower_components/angular-touch/angular-touch.js"></script>
 <!-- endbuild -->
 
 <!-- build:js({app,.tmp}) scripts/main.js -->
@@ -256,11 +258,15 @@
 <script type="text/javascript" src="scripts/carousel/slideAnimation.dir.js"></script>
 <script type="text/javascript" src="scripts/carousel/toggle.dir.js"></script>
 <script type="text/javascript" src="scripts/date/date.js"></script>
+
 <script type="text/javascript" src="scripts/magic-squares/magicSquares.js"></script>
-<script type="text/javascript" src="scripts/magic-squares/board/dragDrop.ctrl.js"></script>
-<script type="text/javascript" src="scripts/magic-squares/game/evaluate.svc.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/dragDrop.ctrl.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/model.svc.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/instructions.ctrl.js"></script>
 <script type="text/javascript" src="scripts/magic-squares/game/master.ctrl.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/text.svc.js"></script>
+
+
 <!-- endbuild -->
 
 <script type="text/javascript">
@@ -279,7 +285,8 @@
         angular.bootstrap(skillsDiv, ['f9Skills']);
         angular.bootstrap(portfolio, ['carousel','ngAnimate']);
         angular.bootstrap(dateDiv, ['date']);
-        angular.bootstrap(magicNumbersDiv, ['magicsquares', 'ngDragDrop', 'ngAnimate']);
+        angular.bootstrap(magicNumbersDiv, ['app', 'ngDragDrop', 'ngAnimate', 'angular.filter', 'ngTouch']);
+        // 'angular.filter', 'ngTouch'
     });
 
 </script>

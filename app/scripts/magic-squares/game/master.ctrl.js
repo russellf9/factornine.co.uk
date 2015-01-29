@@ -1,31 +1,55 @@
-'use strict';
+(function() {
+    'use strict';
 
-//controller for single project view
-angular.module('magicsquares').controller('Master', ['$scope', '$rootScope', 'Evaluate', function($scope, $rootScope, Evaluate) {
-    console.log('hi from the Master!');
+    // the `highest` controller the app
+    angular.module('app').controller('Master', ['Game', '$scope', function(Game, $scope) {
 
-    var self = this;
+        var self = this;
 
-    this.allCorrect = false;
+        // true when all rows, columns and diagonals add up to the `magic number`
+        this.allCorrect = false;
 
-    this.selected = 0;
+        // the number of selected items ( those `drag` items which have been dropped )
+        this.selected = 0;
 
-    // TODO put in Service
-    this.instructions = 'Make all the columns, rows and diagonals add up to ' + Evaluate.magicNumber() + '.';
+        // true if the user has dropped a `drag` item on all the `drop` items
+        this.complete = false;
 
-    // watches for any change in the `game state`
-    $scope.$watch(Evaluate.getUpdateValues, function(newValue, oldValue, scope) {
-        if (newValue && newValue !== oldValue) {
-            self.allCorrect = Boolean(newValue.correct);
-            self.selected = newValue.selected;
-            self.complete = newValue.complete;
-        }
-    });
+        // true if the user has just checked their selections
+        // ( will be falsified once another selection is made )
+        this.checked = false;
 
-    // triggers the watch within the service
-    // TODO should really be done within the service, perhaps by IIFE?
+        // watches for any change in the `game state`
+        $scope.$watch(Game.getUpdateValues, function(newValue, oldValue) {
+            if (newValue && newValue !== oldValue) {
+                self.allCorrect = Boolean(newValue.correct);
+                self.selected = newValue.selected;
+                self.complete = newValue.complete;
+                if (!self.complete) {
+                    self.checked = false;
+                } else if (self.complete && self.checked) {
+                    self.checked = false;
+                }
+            }
+        });
 
-    Evaluate.watchSelectedItems();
+        // a utility which returns every third element
+        // TODO move to a utility Service?
+        this.mod3 = function(elm) {
+            return !(elm.value % 3);
+        };
+
+        // user `hint` function to display the completed values
+        this.check = function() {
+            this.checked = true;
+        };
+        /**
+         * Resets the game
+         */
+        this.clear = function() {
+            Game.clear();
+        };
+    }]);
+}());
 
 
-}]);

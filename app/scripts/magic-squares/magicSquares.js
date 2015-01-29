@@ -2,30 +2,23 @@
 
     'use strict';
 
-    function config() {
-
-        console.log('13:55 doing config!');
-//        $locationProvider.hashPrefix('!');
-//        // routes
+    function config($locationProvider) {
+        $locationProvider.hashPrefix('!');
+        // routes ( for the local app this is required )
 //        $routeProvider
 //            .when('/', {
-//                templateUrl: './partials/game.html',
-//                controller: 'MainController',
-//                controllerAs: 'main'
+//                templateUrl: './partials/game.html'
 //            })
 //            .otherwise({
 //                redirectTo: '/'
 //            });
     }
 
-
-    var magicsquares = angular
-        .module('magicsquares', [])
-        .config(config).
-
-
-        run(['_', function(_) {
-             console.log('magicsquares - I`m running!');
+    angular
+        .module('app', [])
+        .config(config)
+        .run(['_', function(_) {
+            console.log('run!')
         }])
 // I provide an injectable (and extended) version of the underscore / lodash lib.
         .factory(
@@ -39,7 +32,7 @@
             // without injecting it. It's an easy mistake to make, and one that won't
             // throw an error (since the core library is globally accessible).
             // ALSO: See .run() block above.
-           // delete($window._);
+            delete($window._);
 
             // ---
             // CUSTOM LODASH METHODS.
@@ -90,5 +83,6 @@
         }]
     );
 }());
+
 
 
