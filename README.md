@@ -74,3 +74,15 @@ I'm currently using Filezilla, and the site is hosted by [Media Marmot Ltd](http
 ## Gulp
 
 I intend to swap to using Gulp for the build tasks and if possible the deployment.
+
+## Touch
+
+I'm using [jQuery UI Touch Punch](https://github.com/furf/jquery-ui-touch-punch), to enable the drag drop in the Magic Square game.
+
+For information see: [touchpunch](http://touchpunch.furf.com).
+
+See the answer to the issue #23: [Does not work on mobile devices](https://github.com/codef0rmer/angular-dragdrop/issues/23).
+
+```
+$ bower install --save-dev jquery-ui-touch-punch
+```

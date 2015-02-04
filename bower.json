@@ -20,7 +20,8 @@
     "lodash": "~3.0.0",
     "jqueryui": "~1.11.2",
     "angular-filter": "~0.5.2",
-    "angular-dragdrop": "~1.0.11"
+    "angular-dragdrop": "~1.0.11",
+    "jquery-ui-touch-punch": "*"
   },
   "resolutions": {
     "d3": "~3.4.9",
