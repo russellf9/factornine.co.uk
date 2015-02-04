@@ -2,7 +2,7 @@
     'use strict';
 
     // the `highest` controller the app
-    angular.module('app').controller('Master', ['Game', '$scope', function(Game, $scope) {
+    angular.module('magicsquares').controller('Master', ['Game', '$scope', function(Game, $scope) {
 
         var self = this;
 

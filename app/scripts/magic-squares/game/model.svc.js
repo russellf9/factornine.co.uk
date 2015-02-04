@@ -5,7 +5,7 @@
     /**
      * A service which evaluates the games business logic
      */
-    angular.module('app').service('Game', ['_', '$rootScope', function(_, $rootScope) {
+    angular.module('magicsquares').service('Game', ['_', '$rootScope', function(_, $rootScope) {
 
         var _numberOfSquares = 9,
             _grandTotal = 45,

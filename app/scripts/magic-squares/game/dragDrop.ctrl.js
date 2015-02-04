@@ -3,7 +3,7 @@
     'use strict';
 
     //controller for drag and drop
-    angular.module('app').controller('DragDrop', ['Game', function(Game) {
+    angular.module('magicsquares').controller('DragDrop', ['Game', function(Game) {
 
         var self = this;
 
