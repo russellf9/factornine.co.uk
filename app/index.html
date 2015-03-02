@@ -7,7 +7,7 @@
     <meta name="author" content="russell@factornine/co.uk">
     <link rel="shortcut icon" href="../../assets/ico/favicon.png">
 
-    <title>Factornine - AS to JS!</title>
+    <title>Factornine - AS to JS</title>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
     <script src="../../assets/js/html5shiv.js"></script>
@@ -50,6 +50,7 @@
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#magic-numbers">Game</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#magic-numbers-app">Apps</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -101,7 +102,7 @@
     <!-- START THE FEATURETTES -->
     <hr class="featurette-divider">
     <!-- ABOUT -->
-    <div class="row featurette" id="about">
+    <div class="row featurette vertical-align" id="about">
         <div class="col-md-7">
             <h2 class="featurette-heading">About: <span class="text-muted"> Factornine</span></h2>
 
@@ -119,7 +120,7 @@
         </div>
     </div>
 
-    <hr class="featurette-divider">
+    <hr class="featurette-divider vertical-align">
     <!-- SKILLS -->
     <div class="row featurette" id="skills" ng-controller="SkillsCtrl">
         <div class="col-md-7">
@@ -146,7 +147,7 @@
     <!-- MAGIC NUMBERS APP -->
     <div class="row featurette" id="magic-numbers">
         <div class="col-sm-5">
-            <h2 class="featurette-heading">Magic Square<span class="text-muted"> Game</span></h2>
+            <h2 class="featurette-heading">Magic Square<span class="text-muted">&nbsp;Game</span></h2>
 
             <p class="lead">I've continued my interest in creating e-learning games by creating a new game for my
                 portfolio.</p>
@@ -195,6 +196,30 @@
         <div class="container carousel-description">
             <p class="text-muted toggle" ng-repeat="slide in slides" ng-if="isCurrentSlideIndex($index)">
                 {{slides[currentIndex].description}}</p>
+        </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+    <!-- MAGIC NUMBERS iTUNES APP -->
+    <div class="row featurette vertical-align" id="magic-numbers-app">
+        <div class="col-sm-6">
+            <h2 class="featurette-heading">Magic Square Game<span class="text-muted">&nbsp;App</span></h2>
+
+            <p class="lead">The Magic Square Game has now been released as an iOS app for iPhone and iPad!</p>
+
+            <p class="lead"><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=966245243&mt=8"><img src="images/magic-square-game.png?raw=true"></a>
+            </p>
+
+            <p><small>(I'm waiting for version <em>0.1.6</em> to be approved, with the pictured features.)</small></p>
+
+            <p class="lead">The iOS app is a <em>hybrid</em> app using the <a href="http://ionicframework.com" target="_self">Ionic Framework</a>, the source code is hosted on Github. For more information see: <a href="https://github.com/russellf9/magic-squares-mobile">Magic Squares Mobile</a>.
+            </p>
+
+        </div>
+        <!--style="vertical-align: middle;"-->
+        <div class="col-sm-6">
+            <img class="featurette-image img-responsive center-block" style="vertical-align: middle;" src="images/magicSquaresiPad_small.png" alt="angular-service">
         </div>
     </div>
 
