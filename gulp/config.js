@@ -10,6 +10,8 @@ module.exports = {
         version: '0.0.1'
     },
     paths: {
+        app: app,
+        src:  './app',
         sass: './scss/**/*.{scss, sass}',
         fonts: app + '/fonts/**',
         scripts: app + '/js/**/*.js',

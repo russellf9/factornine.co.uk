@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "dependencies": {},
   "repository": {
     "type": "git",
@@ -37,7 +37,12 @@
     "gulp": "~3.8.11",
     "require-dir": "~0.1.0",
     "gulp-load-plugins": "~0.8.1",
-    "yargs": "~3.4.5"
+    "yargs": "~3.4.5",
+    "gulp-git": "~1.0.0",
+    "shelljs": "~0.3.0",
+    "gulp-bump": "~0.2.2",
+    "gulp-update": "0.0.2",
+    "gulp-template": "~3.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
