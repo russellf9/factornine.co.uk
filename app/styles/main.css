@@ -1,4 +1,12 @@
-
+/* implements the flex box
+    remember:
+    the default display value is `row` - ie horizontal
+    `align-items` refers to the `cross axis` - ie vertical
+*/
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
 
 h6 { font-size: 18px; font-size: 1.8rem;  } /* =18px */
 
