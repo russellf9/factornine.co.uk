@@ -21,7 +21,8 @@ module.exports = {
         index: app + '/index.html',
         images: app + '/img/**/*.*',
         cv: cv + '/cv.html',
-        readme: './README.md'
+        readme: './README.md',
+        atom: app + '/atom.xml'
     },
     json: {
         package: './package.json',
