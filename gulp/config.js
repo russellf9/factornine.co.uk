@@ -3,7 +3,8 @@
 var src = './app',
     app = './app',
     version = '0.0.1',
-    dist  = './dist';
+    dist  = './dist',
+    cv  = './cv';
 
 module.exports = {
     pkg: {
@@ -18,7 +19,9 @@ module.exports = {
         vendor: './vendor.json',
         partials: app + '/partials/**/*.html',
         index: app + '/index.html',
-        images: app + '/img/**/*.*'
+        images: app + '/img/**/*.*',
+        cv: cv + '/cv.html',
+        readme: './README.md'
     },
     json: {
         package: './package.json',
