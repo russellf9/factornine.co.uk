@@ -6,6 +6,10 @@ var gulp = require('gulp'),
 
 
 // Overwrites the the templated string with the package number in the index file.
+
+//  <p>Version:  <%= pkg.version %></p> will become  <p>Version:  0.0.3</p>
+
+// Note: the build system is not normalised yet the `<%= pkg.version %>` string has to be added first!
 gulp.task('update', function() {
 
     var pkg = require('../../../package.json');

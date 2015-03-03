@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {},
   "repository": {
     "type": "git",
@@ -32,12 +32,12 @@
     "grunt-usemin": "~2.1.0",
     "gulp": "~3.8.11",
     "gulp-bump": "~0.2.2",
-    "gulp-ftp": "^1.0.3",
+    "gulp-ftp": "~1.0.3",
     "gulp-git": "~1.0.0",
     "gulp-load-plugins": "~0.8.1",
     "gulp-template": "~3.0.0",
     "gulp-update": "0.0.2",
-    "gulp-util": "^3.0.4",
+    "gulp-util": "~3.0.4",
     "jpegtran-bin": "0.2.0",
     "jshint-stylish": "~0.1.5",
     "load-grunt-tasks": "~0.4.0",
