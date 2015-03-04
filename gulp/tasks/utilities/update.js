@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     config = require('../../config'),
     template = require('gulp-template');
 
-
 // Overwrites the the templated string with the package number in the index file.
 
 //  <p>Version:  <%= pkg.version %></p> will become  <p>Version:  0.0.3</p>

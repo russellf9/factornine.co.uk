@@ -47,7 +47,9 @@
     "yargs": "~3.4.5",
     "gulp-pandoc": "~0.2.1",
     "gulp-debug": "~2.0.1",
-    "gulp-shell": "~0.3.0"
+    "gulp-shell": "~0.3.0",
+    "gulp-html-replace": "~1.4.4",
+    "gulp-replace-task": "~0.1.0"
   },
   "engines": {
     "node": ">=0.10.0"
