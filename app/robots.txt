@@ -1,3 +1,21 @@
 # robotstxt.org/
 
 User-agent: *
+Disallow: /www.videotel.com/
+Disallow: /www.tmsw.com/
+Disallow: /www.saint_design.co.uk/
+Disallow: /www.rmg.com/
+Disallow: /www.proximitylondon.com/
+Disallow: /www.oink.co.uk/
+Disallow: /www.videotel.com/
+Disallow: /www.nectar.com/
+Disallow: /www.mediacircusgroup.com/
+Disallow: /www.forward.co.uk/
+Disallow: /www.espresso.co.uk/
+Disallow: /www.durex.com/
+Disallow: /www.dlapiper.com/
+Disallow: /www.carlsonmedia.co.uk/
+Disallow: /www.binweevils.com/
+Disallow: /bower_components/
+
+
