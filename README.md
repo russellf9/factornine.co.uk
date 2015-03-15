@@ -86,3 +86,14 @@ See the answer to the issue #23: [Does not work on mobile devices](https://githu
 ```
 $ bower install --save-dev jquery-ui-touch-punch
 ```
+
+
+
+## Trello/Github integration
+
+I'm using a webhook to integrate Trello with Github
+Use commits in the form:
+
+`$ git commit -m Trello has been integrated with trello done #49'`
+
+
