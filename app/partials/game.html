@@ -14,7 +14,7 @@
         <!--DROP-->
         <div ng-if="true" class="drop-zone">
 
-            <ul id="triple" class="drop-board">
+            <ul ng-if="true" id="triple" class="drop-board">
                 <li class="square drop-slot" ng-repeat="drop in dragDrop.dropTargets track by $index">
 
                     <div class="btn btn-droppable square" data-drop="true" ng-model='dragDrop.selectedItems'

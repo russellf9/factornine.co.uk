@@ -1,0 +1,51 @@
+<h2 id="factornine-website-yeoman-application">Factornine Website Yeoman Application</h2>
+<p>The site is adapted from the standard Yeoman web app.</p>
+<p>See: <a href="https://github.com/yeoman/generator-webapp">Web app generator</a></p>
+<p>And: <a href="http://blog.teamtreehouse.com/improving-development-workflow-yeoman">Improving Your Development Workflow with Yeoman</a></p>
+<h3 id="requirements">Requirements</h3>
+<p># If we have the following: &gt; Error: Cannot find module ‘load-grunt-tasks’</p>
+<p>$ npm update</p>
+<h3 id="build">Build</h3>
+<pre><code># Run the default Grunt task
+$ grunt
+
+# To run the `test` server and set up watches
+$ grunt serve</code></pre>
+<h3 id="git">Git</h3>
+<pre><code>Using bitbucket to host the site.
+#
+$ git remote add origin git@bitbucket.org:rwenban/factornine.co.uk.git
+$ git push -u origin --all # pushes up the repo and its refs for the first time
+$ git push -u origin --tags # pushes up any tags
+
+# To push to master
+$ git push origin master</code></pre>
+<h3 id="location">Location</h3>
+<pre><code># In terminal locate the `app`
+$ cd /Users/russellwenban/localhosts/www.factornine.co.uk/website</code></pre>
+<h3 id="rebuild">Rebuild</h3>
+<p>Simply run the default task:</p>
+<pre><code>grunt</code></pre>
+<p>This will build the app. When any changes have been made or run:</p>
+<pre><code>grunt build</code></pre>
+<p>The grunt task is a bit slow to do everything.</p>
+<p>Will build to the <em>dist</em> directory.</p>
+<pre><code>grunt serve</code></pre>
+<p>This will run the local server <code>http://localhost:9000</code></p>
+<h3 id="upload">Upload</h3>
+<p>I’m currently using Filezilla, and the site is hosted by <a href="http://cp.factornine.co.uk">Media Marmot Ltd</a>.</p>
+<ol type="1">
+<li>Unlock the site</li>
+<li>Open Filezilla</li>
+<li>In Filezilla - Open local site <code>/Users/russellwenban/localhosts/www.factornine.co.uk/website/dist/</code></li>
+<li>In Filezilla - Check connect to <code>factornine.co.uk</code></li>
+<li>and open <code>/public_html</code></li>
+<li>Upload all files from the local dist folder</li>
+</ol>
+<h2 id="gulp">Gulp</h2>
+<p>I intend to swap to using Gulp for the build tasks and if possible the deployment.</p>
+<h2 id="touch">Touch</h2>
+<p>I’m using <a href="https://github.com/furf/jquery-ui-touch-punch">jQuery UI Touch Punch</a>, to enable the drag drop in the Magic Square game.</p>
+<p>For information see: <a href="http://touchpunch.furf.com">touchpunch</a>.</p>
+<p>See the answer to the issue #23: <a href="https://github.com/codef0rmer/angular-dragdrop/issues/23">Does not work on mobile devices</a>.</p>
+<pre><code>$ bower install --save-dev jquery-ui-touch-punch</code></pre>
