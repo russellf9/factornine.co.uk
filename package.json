@@ -1,10 +1,6 @@
 {
   "name": "website",
-<<<<<<< HEAD
-  "version": "0.0.5",
-=======
   "version": "0.0.8",
->>>>>>> 1cf18204e8b11dc14bfcdf7bd039292f3f9018f1
   "dependencies": {},
   "repository": {
     "type": "git",
@@ -54,16 +50,12 @@
     "require-dir": "~0.1.0",
     "shelljs": "~0.3.0",
     "time-grunt": "~0.3.1",
-<<<<<<< HEAD
-    "yargs": "~3.4.5"
-=======
     "yargs": "~3.4.5",
     "gulp-pandoc": "~0.2.1",
     "gulp-debug": "~2.0.1",
     "gulp-shell": "~0.3.0",
     "gulp-html-replace": "~1.4.4",
     "gulp-replace-task": "~0.1.0"
->>>>>>> 1cf18204e8b11dc14bfcdf7bd039292f3f9018f1
   },
   "engines": {
     "node": ">=0.10.0"
