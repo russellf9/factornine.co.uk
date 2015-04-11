@@ -8,13 +8,21 @@ echo "Hi from the script"
 # Directory for CV ( same )
 cvDir=.
 
+
+
 # Directory for CV Builds
 # excuse the hard coding!
 cvBuildDir=/Users/factornine/localhosts/www.factornine.co.uk/website/cv/builds
 #cvBuildDir=.builds
 
+
+# Directory for the output
+cvOutputDir=/Users/factornine/localhosts/www.factornine.co.uk/website/cv/output
+
 # Name of the CV file
-cvName="Russell Wenban - CV - $(date +%Y-%m-%d)"
+#cvName="Russell Wenban - CV - $(date +%Y-%m-%d)"
+
+cvName="cv"
 
 ###
 ## Create HTML files for each Markdown file
@@ -25,18 +33,26 @@ for i in $(ls $cvBuildDir/*md) ; do
   # Get the name of the file, sans extension, for generating HTML file
   cvBuildName=$(basename "$i" .md)
   # Convert to HTML
-  pandoc --section-divs -f markdown -t html5 -o $cvBuildDir/$cvBuildName.html $i
+  pandoc --normalize --section-divs -f markdown -t  html5 -o $cvOutputDir/$cvBuildName.html $i
 done
 
 ###
 ## Join the HTML files into one HTML CV
 #
 
-pandoc -s -H $cvBuildDir/poole.css --section-divs -f markdown -t html5 \
--o "$cvDir/$cvName.html" \
--A $cvBuildDir/cv.html \
--A $cvBuildDir/experience.html \
--A $cvBuildDir/github.html \
--A $cvBuildDir/factornine.html \
+#-A $cvOutputDir/cv.html \
+
+pandoc -s -H $cvBuildDir/simple.css --section-divs -f markdown -t html5 \
+-o "$cvOutputDir/$cvName.html" \
+-A $cvOutputDir/skills.html \
+-A $cvOutputDir/experience.html \
+-A $cvOutputDir/github.html \
+-A $cvOutputDir/factornine.html \
 $cvBuildDir/cv.md
 
+# Convert HTML to PDF
+# Will need to get `
+#pandoc -H $cvBuildDir/f9.tex "$cvDir/$cvName.html" -o "$cvOutputDir/$cvName.pdf"
+
+# Convert HTMl to Word
+pandoc -H $cvBuildDir/f9.tex "$cvOutputDir/$cvName.html" -o "$cvOutputDir/$cvName.docx"
