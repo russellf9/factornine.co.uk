@@ -44,15 +44,18 @@ done
 
 pandoc -s -H $cvBuildDir/simple.css --section-divs -f markdown -t html5 \
 -o "$cvOutputDir/$cvName.html" \
+-A $cvOutputDir/objective.html \
 -A $cvOutputDir/skills.html \
 -A $cvOutputDir/experience.html \
+-A $cvOutputDir/education.html \
 -A $cvOutputDir/github.html \
 -A $cvOutputDir/factornine.html \
+-A $cvOutputDir/references-request.html \
 $cvBuildDir/cv.md
 
 # Convert HTML to PDF
-# Will need to get `
-#pandoc -H $cvBuildDir/f9.tex "$cvDir/$cvName.html" -o "$cvOutputDir/$cvName.pdf"
+
+pandoc -H  $cvBuildDir/f9.tex "$cvOutputDir/$cvName.html" -o "$cvOutputDir/$cvName.pdf"
 
 # Convert HTMl to Word
 pandoc -H $cvBuildDir/f9.tex "$cvOutputDir/$cvName.html" -o "$cvOutputDir/$cvName.docx"
