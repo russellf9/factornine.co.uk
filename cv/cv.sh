@@ -54,7 +54,6 @@ pandoc -s -H $cvBuildDir/simple.css --section-divs -f markdown -t html5 \
 $cvBuildDir/cv.md
 
 # Convert HTML to PDF
-
 pandoc -H  $cvBuildDir/f9.tex "$cvOutputDir/$cvName.html" -o "$cvOutputDir/$cvName.pdf"
 
 # Convert HTMl to Word
