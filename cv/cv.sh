@@ -1,13 +1,10 @@
 #!/bin/bash
 
-echo "Hi from the script"
-
 
 ## Variables
 
 # Directory for CV ( same )
 cvDir=.
-
 
 
 # Directory for CV Builds
@@ -42,6 +39,7 @@ done
 
 #-A $cvOutputDir/cv.html \
 
+
 pandoc -s -H $cvBuildDir/simple.css --section-divs -f markdown -t html5 \
 -o "$cvOutputDir/$cvName.html" \
 -A $cvOutputDir/objective.html \
@@ -53,8 +51,18 @@ pandoc -s -H $cvBuildDir/simple.css --section-divs -f markdown -t html5 \
 -A $cvOutputDir/references-request.html \
 $cvBuildDir/cv.md
 
+
 # Convert HTML to PDF
 pandoc -H  $cvBuildDir/f9.tex "$cvOutputDir/$cvName.html" -o "$cvOutputDir/$cvName.pdf"
 
 # Convert HTMl to Word
 pandoc -H $cvBuildDir/f9.tex "$cvOutputDir/$cvName.html" -o "$cvOutputDir/$cvName.docx"
+
+###
+## Cover Letter
+# 
+
+# Convert HTML to PDF
+pandoc -H $cvBuildDir/f9.tex "$cvOutputDir/cover-letter.html" -o "$cvOutputDir/Cover-Letter-$(date +%Y-%m-%d).pdf"
+
+# pandoc -H $cvBuildDir/pdf-template.tex "$cvBuildDir/cover-letter.md" -o "$cvOutputDir/Cover-Letter-$(date +%Y-%m-%d).pdf
