@@ -4,7 +4,7 @@
 
 Adept with a variety of front-end languages and tools
 
-- Languages – JavaScript, ActionScript, HTML5, CSS3, and SASS
+- Languages – JavaScript, ActionScript, Unix shell, HTML5, CSS3, and SASS
 
 - Frameworks and platforms – AngularJS, Ionic Framework, Cordova, PhoneGap, Node.js, jQuery, PureMVC
 
