@@ -48,6 +48,7 @@ pandoc -s -H $cvBuildDir/simple.css --section-divs -f markdown -t html5 \
 -A $cvOutputDir/education.html \
 -A $cvOutputDir/github.html \
 -A $cvOutputDir/factornine.html \
+-A $cvOutputDir/social-media.html \
 -A $cvOutputDir/references-request.html \
 $cvBuildDir/cv.md
 
@@ -60,7 +61,7 @@ pandoc -H $cvBuildDir/f9.tex "$cvOutputDir/$cvName.html" -o "$cvOutputDir/$cvNam
 
 ###
 ## Cover Letter
-# 
+#
 
 # Convert HTML to PDF
 pandoc -H $cvBuildDir/f9.tex "$cvOutputDir/cover-letter.html" -o "$cvOutputDir/Cover-Letter-$(date +%Y-%m-%d).pdf"

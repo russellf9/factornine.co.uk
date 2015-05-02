@@ -1,5 +1,13 @@
 ## Experience
 
+**Flash Programmer (Freelance), VCCP Me, London** • _April 2015_
+
+- Creation of Flash-Talking banner ads for Kia using Greensock animation.
+
+**Angular Developer (Freelance), Ipcortex, London/Bletchley Park** • _March-April 2015_
+
+- Development of an iOS app using Ionic for implementing Web RTC.
+
 **Software engineer, Factornine Ltd, London** • _February 2015–March 2015_
 
 - Designed, developed and released an iOS app written using the Ionic Framework

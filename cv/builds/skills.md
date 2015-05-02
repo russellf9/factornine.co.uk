@@ -4,15 +4,15 @@
 
 Adept with a variety of front-end languages and tools
 
--  Languages – JavaScript, ActionScript, HTML5, CSS3, and SCSS
+- Languages – JavaScript, ActionScript, HTML5, CSS3, and SASS
 
-- Frameworks and platforms – AngularJS, Ionic Framework, Node.js, jQuery, PureMVC
+- Frameworks and platforms – AngularJS, Ionic Framework, Cordova, PhoneGap, Node.js, jQuery, PureMVC
 
 - Databases - MySQL, Firebase
 
 - Development and testing – Webstorm, CLI, Git, MAMP, SVN, JSHint, Jasmine, Karma, and Protractor
 
-- Build, test and package management – Grunt, Gulp, Bower, Homebrew and NPM
+- Build, test and package management – Grunt, Gulp, Bower, Homebrew, Ant and NPM
 
 ### Other competencies
 
