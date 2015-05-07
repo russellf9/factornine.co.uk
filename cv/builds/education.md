@@ -1,5 +1,9 @@
 ## Education
 
+**Distilled JavaScript - Dactic.io** • _February 2014_
+
+- An introduction to the MEAN stack
+
 **HTML5 – The Definitive Course - Dndigital** • _March 2011_
 
 - Two day course with dndigital. A hands-on and energetic workshop concentrating on the new HTML markup tags and semantic rules.

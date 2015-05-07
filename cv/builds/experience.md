@@ -14,7 +14,7 @@
 
 - Hosted on Github: [Magic Squares Mobile](https://github.com/russellf9/magic-squares-mobile)
 
-**Angular Developer (Freelance), Marketing Store Worldwide, London** • _November 2014–February 2014_
+**Angular Developer (Freelance), Marketing Store Worldwide, London** • _November 2014–February 2015_
 
 * Development of \`Scheduling\` app for McDonalds using Angular and Firebase, to be used in-house for the design team to
 organise assets scheduled for in-store screen displays

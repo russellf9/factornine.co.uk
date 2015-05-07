@@ -4,21 +4,21 @@
 
 Adept with a variety of front-end languages and tools
 
-- Languages – JavaScript, ActionScript, Unix shell, HTML5, CSS3, and SASS
+- Languages – JavaScript, ActionScript, Bash, Unix shell, HTML5, CSS3, and SASS
 
-- Frameworks and platforms – AngularJS, Ionic Framework, Cordova, PhoneGap, Node.js, jQuery, PureMVC
+- Frameworks and platforms – AngularJS, Ionic Framework, Cordova, PhoneGap, Node.js, jQuery, PureMVC, Lodash
 
 - Databases - MySQL, Firebase
 
-- Development and testing – Webstorm, CLI, Git, MAMP, SVN, JSHint, Jasmine, Karma, and Protractor
+- Development and testing – Webstorm, Git, MAMP, SVN, JSHint, Jasmine, Karma, and Protractor
 
-- Build, test and package management – Grunt, Gulp, Bower, Homebrew, Ant and NPM
+- Build, test and package management – Grunt, Gulp, Bower, Yeoman, Homebrew, Ant and NPM
 
 ### Other competencies
 
 Experience with a variety of disciplines
 
-- Other languages familiar with - Flex, Java, Playframework, and Objective-C
+- Other languages familiar with - Flex, Java, MEAN, Playframework, and Objective-C
 
 - Animation tools - Greensock ( both AS3 and JS )
 
