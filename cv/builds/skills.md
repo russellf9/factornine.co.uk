@@ -4,7 +4,7 @@
 
 Adept with a variety of front-end languages and tools
 
-- Languages – JavaScript, ActionScript, Bash, Unix shell, HTML5, CSS3, and SASS
+- Languages – JavaScript, ActionScript, Bash, Unix Shell, HTML5, CSS3, and SASS
 
 - Frameworks and platforms – AngularJS, Ionic Framework, Cordova, PhoneGap, Node.js, jQuery, PureMVC, Lodash
 
@@ -18,7 +18,7 @@ Adept with a variety of front-end languages and tools
 
 Experience with a variety of disciplines
 
-- Other languages familiar with - Flex, Java, MEAN, Playframework, and Objective-C
+- Other languages familiar with - Flex, Java, MEAN, Play Framework, and Objective-C
 
 - Animation tools - Greensock ( both AS3 and JS )
 

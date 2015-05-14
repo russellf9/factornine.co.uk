@@ -10,30 +10,30 @@
 
 **Vyre Unify CMS Platform - Espresso Education** • _June 2010_
 
-- An introduction on how to create a simple CMS site to display news articles, using the Unify Interface. Also, the course 
+- An introduction on how to create a simple CMS site to display news articles, using the Unify Interface
 
-**Advanced ActionScript 3, OOP. - Dndigital** • _March 2011_
+**Advanced ActionScript 3, OOP - Dndigital** • _March 2011_
 
-- In house training on how to incorporate basic GOF design patterns in AS3.
+- In house training on how to incorporate basic GOF design patterns in AS3
 
 **Computer Science - University of London Birkbeck College** • _2004 – 2006_
 
 - Programming in C++
 
-- Object Orientated Programming: use of classes and inheritance.
+- Object Orientated Programming: use of classes and inheritance
 
-- Database Management: Relational algebra and data manipulation using SQL.
+- Database Management: Relational algebra and data manipulation using SQL
 
-- Computer Architecture: Including ability to program using assembler.
+- Computer Architecture: Including ability to program using assembler
 
 - Data Structures: Understanding of various types of file organization, and the ability to use algorithms to access and create data structures
 
 **University of East London: BA (Hons) 2:1 Fine Art (Film and Multimedia)** • _2004 – 2006_
 
-- 16mm film production, including use of lighting and traditional film editing.
+- 16mm film production, including use of lighting and traditional film editing
  
-- Computer animation and multimedia production using Director and Premier.
+- Computer animation and multimedia production using Director and Premier
 
 - Sound production
 
-- Linear and non-linear video production.
+- Linear and non-linear video production
