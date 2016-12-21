@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Factornine is the Website for Russell Wenban a freelance software engineer who loves Angular.js">
+    <meta name="author" content="russell@factornine/co.uk">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed" />
+
+    <title>Factornine - JS - FED</title>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script><![endif]-->    <!-- endbower -->    <!-- endbuild -->
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.10.3/TweenMax.min.js"></script>
+
+    <!-- build:css styles/vendor.css -->    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../bower_components/nvd3/src/nv.d3.css" />
+    <!-- endbower -->    <!-- endbuild -->
+
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/d3.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+</head>
+<!-- NAVBAR
+================================================== -->
+
+<body> <!--This is the `root` app-->
+<div class="navbar-wrapper">
+    <div class="container">
+        <!-- DEFAULT BORING NAVIGATION -->
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Factorine</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about">About</a></li>grunt serve
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#magic-numbers">Game</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#magic-numbers-app">Apps</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="./cv.html">CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- THE CLASSIC FAT HEADING! -->
+        <div class="jumbotron">
+            <h1 class="text-center">Factornine</h1>
+
+            <h2 class="text-center">Front End Development</h2>
+
+            <p class="lead text-center">Web and Mobile Development - HTML5, CSS3 and Angular.js</p>
+        </div>
+    </div>
+</div>
+<!-- end of navbar-wrapper -->
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+    <hr class="featurette-divider">
+    <!-- Three columns of text-->
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="img-circle" src="images/espresso_closeup_1.png" alt="espresso">
+
+            <h2>e-learning</h2>
+
+            <p>&nbsp;</p>
+        </div>
+        <div class="col-lg-4">
+            <img class="img-circle" src="images/anchor_close_up_1.png" alt="make a moo!">
+
+            <h2>games</h2>
+
+            <p>&nbsp;</p>
+        </div>
+        <div class="col-lg-4">
+            <img class="img-circle" src="images/ford_closeup_1.png" alt="ford">
+
+            <h2>advertising</h2>
+
+            <p>&nbsp;</p>
+        </div>
+    </div>
+
+    <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+    <!-- ABOUT -->
+    <div class="row featurette vertical-align" id="about">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">About: <span class="text-muted"> Factornine</span></h2>
+
+            <p class="lead">Factornine Limited is the company which represents Russell Wenban a London FED
+                developer.</p>
+
+            <p class="lead">I have been programmer for 15 years and have developed a variety of projects for leading
+                e-learning companies, design agencies and start-ups.</p>
+
+            <p class="lead">Some of the well known brands I've produced for include: BBC Jam, Espresso Education, Ford,
+                Virgin, Nectar, Videotel, Anchor Butter and McDonald's.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="images/videotel_closeup_2.png" alt="angular-service">
+        </div>
+    </div>
+
+    <hr class="featurette-divider vertical-align">
+    <!-- SKILLS -->
+    <div class="row featurette" id="skills" ng-controller="SkillsCtrl">
+        <div class="col-md-7">
+            <div d3-bars bar-height="28" bar-padding="2" data="data" colors="colors"></div>
+        </div>
+        <div class="col-md-5">
+            <h2 class="featurette-heading">Skills: <span class="text-muted">AS to JS</span></h2>
+
+            <p class="lead">I am a proficient programmer successfully making the transition from the Classical world of
+                ActionScript to the contemporary world of functional JavaScript and Angular.js.</p>
+
+            <p class="lead">My skills include proficiency in the following: AS3, JavaScript, Angular.js, iOS
+                Development, Ionicframework, HTML5 and CSS3, SASS, Twitter Bootstrap, UNIX, Gulp, Grunt and ANT and
+                Gulp.</p>
+
+            <p class="lead">I'm recently updated this website to be a `Yeoman web app` and have added a portfolio
+                written in Angular using TweenMax animation and created this dynamic `skills matrix` using d3 in
+                Angular.js.</p>
+            <!--<p class="lead"><a ng-click="animate()">Animate</a> the bars</p>-->
+
+            <p class="lead">I'm currently working on creating e-learning apps using Ionic for the Apple App Store.
+            </p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- MAGIC NUMBERS APP -->
+    <div class="row featurette" id="magic-numbers">
+        <div class="col-sm-5">
+            <h2 class="featurette-heading">Magic Square<span class="text-muted">&nbsp;Game</span></h2>
+
+            <p class="lead">I've continued my interest in creating e-learning games by creating a new game for my
+                portfolio.</p>
+
+            <p class="lead">The <em>Magic Square Puzzle</em> is a classic logic game, where each row, column, and
+                diagonal adds up to the same number. This number is the <em>Magic Number</em>.
+            </p>
+
+            <p class="lead">My version of this puzzle is written in Angular and is an open source project hosted on
+                Github. See: <a href="https://github.com/russellf9/magic-squares">Magic Squares</a>.
+            </p>
+
+            <!--<p class="lead">I've added a couple of enhancements to the original basic app, including adding `hint`, 'clear` and `check` buttons. And, will be looking at getting the app to work on mobile next.-->
+            <!--</p>-->
+        </div>
+        <div class="col-sm-7" style="min-height: 600px; min-width: 600px; border: solid darkgray;">
+            <row class="text-center">
+                <ng-include src="'partials/game.html'"></ng-include>
+            </row>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- Portfolio -->
+    <div class="row featurette" id="portfolio" ng-controller="CarouselCtrl">
+        <div class="col-md-12 text-center">
+            <h2 class="featurette-heading">Portfolio: <span class="text-muted">&nbsp;Commercial and Personal</span></h2>
+        </div>
+        <div class="container slider">
+            <img style="vertical-align: middle" ng-repeat="slide in slides"
+                 class="slide slide-animation nonDraggableImage" ng-hide="!isCurrentSlideIndex($index)"
+                 ng-src="{{slide.image}}">
+            <a class="arrow prev" ng-click="nextSlide()"></a> <a class="arrow next" ng-click="prevSlide()"></a>
+            <nav class="nav-carousel">
+                <div class="wrapper">
+                    <ul class="dots">
+                        <li class="dot" ng-repeat="slide in slides">
+                            <a ng-class="{'active':isCurrentSlideIndex($index)}"
+                               ng-click="setCurrentSlideIndex($index);"> </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+        <div class="container carousel-description">
+            <p class="text-muted toggle" ng-repeat="slide in slides" ng-if="isCurrentSlideIndex($index)">
+                {{slides[currentIndex].description}}</p>
+        </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+    <!-- MAGIC NUMBERS iTUNES APP -->
+    <div class="row featurette vertical-align" id="magic-numbers-app">
+        <div class="col-sm-6">
+            <h2 class="featurette-heading">Magic Square Game<span class="text-muted">&nbsp;App</span></h2>
+
+            <p class="lead">Currently the Magic Square Game iOS app for iPhone and iPad is not available. :-(</p>
+            <p class="lead">I'll endevour to get the app up and running shortly</p>
+
+            <!--
+            <p class="lead"><a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=966245243&mt=8"><img src="images/magic-square-game.png?raw=true"></a>
+            </p>
+
+            <p><small>Version <em>0.1.6</em> to now ready for sale!</small></p>
+
+            <p class="lead">The iOS app is a <em>hybrid app</em> using the <a href="http://ionicframework.com" target="_self">Ionic Framework</a>, the source code is hosted on Github. For more information see: <a href="https://github.com/russellf9/magic-squares-mobile">Magic Squares Mobile</a>.
+            </p>
+            ->
+
+        </div>
+        <!--style="vertical-align: middle;"-->
+        <div class="col-sm-6">
+            <img class="featurette-image img-responsive center-block" style="vertical-align: middle;" src="images/magicSquaresiPad_small.png" alt="angular-service">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- CONTACT -->
+    <div class="row" id="contact">
+        <div class="col-lg-12 col-md-12">
+            <h2 class="featurette-heading">Keep in touch: <span class="text-muted">email &amp; social media</span></h2>
+
+            <p class="lead"><br/></p>
+
+            <div class="col-lg-3 text-center f9-contacts center">
+                <h4>
+                    <script type="text/javascript"> document.write("<a href=\"mail" + "to:" + new Array("russell", "factornine.co.uk").join("@") + "\">" + new Array("russell", "factornine.co.uk").join("@") + "</" + "a>"); </script>
+                </h4>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center f9-contacts center">
+                <a href="http://uk.linkedin.com/pub/russell-wenban/18/614/39b" style="text-decoration:none;">
+                    <img src="images/linkedin.png" width="48" height="48" alt="View Russell Wenban's LinkedIn profile" border="0"></a>
+            </div>
+            <div class="col-lg-3 col-md-3 text-center f9-contacts center">
+                <a href="http://twitter.com/russellf9"><img src="images/twitter_logo_blue.png" width="48" height="48" alt="f9 twitter"></a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!--CREATION DATE-->
+    <footer id="date" ng-controller="DateController" ng-cloak>
+        <div class="not-vertical-align">
+
+            <p>Version:  0.0.9</p>
+
+            <p>&copy; 2016 Factornine Limited &middot; Site last updated: {{date}} <span class="pull-right"><a href="#">Back to top</a></span></p>
+
+        </div>
+        <div>
+
+        </div>
+
+
+    </footer>
+
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<!-- build:js scripts/vendor.js --><!-- bower:js -->
+<script src="../bower_components/modernizr/modernizr.js"></script>
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="../bower_components/jquery-ui-touch-punch/jquery.ui.touch-punch.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../bower_components/moment/moment.js"></script>
+<script src="../bower_components/d3/d3.js"></script>
+<script src="../bower_components/nvd3/nv.d3.js"></script>
+<script src="../bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.js"></script>
+<!-- endbower --><!-- endbuild -->
+
+<!-- Angular and app dependencies -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-youtube-mb/src/angular-youtube-embed.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.js"></script>
+<script src="../bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+<script src="../bower_components/lodash/lodash.js"></script>
+<script src="../bower_components/angular-dragdrop/src/angular-dragdrop.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/extra.js -->
+<script type="text/javascript" src="../bower_components/angular-touch/angular-touch.js"></script>
+<script type="text/javascript" src="../bower_components/angular-filter/dist/angular-filter.js"></script>
+<!-- endbuild -->
+
+<!-- build:js({app,.tmp}) scripts/main.js -->
+<script type="text/javascript" src="scripts/skills/f9Skills.js"></script>
+<script type="text/javascript" src="scripts/skills/skills.ctrl.js"></script>
+<script type="text/javascript" src="scripts/skills/barChart.dir.js"></script>
+<script type="text/javascript" src="scripts/carousel/carousel.js"></script>
+<script type="text/javascript" src="scripts/carousel/slideAnimation.dir.js"></script>
+<script type="text/javascript" src="scripts/carousel/toggle.dir.js"></script>
+<script type="text/javascript" src="scripts/date/date.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/magicSquares.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/lodash.svc.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/model.svc.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/dragDrop.ctrl.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/instructions.ctrl.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/master.ctrl.js"></script>
+<script type="text/javascript" src="scripts/magic-squares/game/text.svc.js"></script>
+<!-- endbuild -->
+
+
+<script type="text/javascript">
+
+    $(function() {
+        $.event.props.push('dataTransfer');
+    });
+    // manually bootstrapping all the required apps
+    var skillsDiv = document.getElementById('skills'),
+            portfolio = document.getElementById('portfolio'),
+            secondApp = document.getElementById('secondApp'),
+            dateDiv = document.getElementById('date'),
+            magicNumbersDiv = document.getElementById('magic-numbers');
+
+    angular.element(document).ready(function() {
+        angular.bootstrap(skillsDiv, ['f9Skills']);
+        angular.bootstrap(portfolio, ['carousel', 'ngAnimate']);
+        angular.bootstrap(dateDiv, ['date']);
+        angular.bootstrap(magicNumbersDiv, ['magicsquares', 'ngDragDrop', 'ngAnimate', 'angular.filter', 'ngTouch']);
+    });
+
+</script>
+
+</body>
+</html>
