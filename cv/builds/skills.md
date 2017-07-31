@@ -6,7 +6,7 @@ Adept with a variety of front-end languages and tools
 
 - Languages – JavaScript, ActionScript, Bash, Unix Shell, HTML5, CSS3, and SASS
 
-- Frameworks and platforms – AngularJS, Ionic Framework, Cordova, PhoneGap, Node.js, jQuery, PureMVC, Lodash
+- Frameworks and platforms – AngularJS, Ionic Framework, Cordova, PhoneGap, Node.js, jQuery, PureMVC, Lodash, Underscore, Moment.js
 
 - Databases - MySQL, Firebase
 

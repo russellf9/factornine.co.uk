@@ -1,5 +1,17 @@
 ## Experience
 
+** Angular Front End Developer, Qudini Ltd London** • _May 2015-July 2017_
+
+– Development of features for Qudini Web App, written in AngularJS
+
+- Styling using SASS
+
+- Implementing API's from a Java Play framework back-end
+
+- Upgrading the App to Bootstrap with a Mobile emphasis
+
+ 
+
 **Flash Programmer (Freelance), VCCP Me, London** • _April 2015_
 
 - Creation of Flash-Talking banner ads for Kia using Greensock animation

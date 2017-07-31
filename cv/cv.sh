@@ -9,12 +9,12 @@ cvDir=.
 
 # Directory for CV Builds
 # excuse the hard coding!
-cvBuildDir=/Users/factornine/localhosts/www.factornine.co.uk/website/cv/builds
+cvBuildDir=/Users/factornine/localhosts/www.factornine.co.uk/factornine.co.uk/cv/builds
 #cvBuildDir=.builds
 
 
 # Directory for the output
-cvOutputDir=/Users/factornine/localhosts/www.factornine.co.uk/website/cv/output
+cvOutputDir=/Users/factornine/localhosts/www.factornine.co.uk/factornine.co.uk/cv/output
 
 # Name of the CV file
 #cvName="Russell Wenban - CV - $(date +%Y-%m-%d)"
