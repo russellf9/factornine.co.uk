@@ -6,7 +6,7 @@
 
 - Styling using SASS
 
-- Implementing API's from a Java Play framework back-end
+- Implementing API's from a Java PlayFramework back-end
 
 - Upgrading the App to Bootstrap with a Mobile emphasis
 
