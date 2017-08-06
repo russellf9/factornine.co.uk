@@ -1,14 +1,16 @@
 ## Experience
 
-** Angular Front End Developer, Qudini Ltd London** • _May 2015-July 2017_
+**Angular Front End Developer, Qudini Ltd London** • _May 2015-July 2017_
 
-– Development of features for Qudini Web App, written in AngularJS
+- Development of features for the Qudini Web App, written in AngularJS
 
 - Styling using SASS
 
+- Writing Selenium tests using Selenese
+
 - Implementing API's from a Java PlayFramework back-end
 
-- Upgrading the App to Bootstrap with a Mobile emphasis
+- Upgrading the parts of the Application to use Bootstrap with a Mobile emphasis
 
  
 

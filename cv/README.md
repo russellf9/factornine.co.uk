@@ -11,7 +11,7 @@ See: [Trello #57-cv-task-md-html](russellwenban1+52f3c97a4fe671c230c877f0+54f5fd
 
 ## Instructions
 
-To create the output files fron the source:
+To create the output files from the source:
 
 ```
 # CD to `factornine.co.uk/cv`
