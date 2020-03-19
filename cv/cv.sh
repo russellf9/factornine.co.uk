@@ -27,10 +27,11 @@ cvName="cv"
 
 for i in $(ls $cvBuildDir/*md) ; do
   echo $i
+  echo $cvBuildDir
   # Get the name of the file, sans extension, for generating HTML file
   cvBuildName=$(basename "$i" .md)
   # Convert to HTML
-  pandoc --normalize --section-divs -f markdown -t  html5 -o $cvOutputDir/$cvBuildName.html $i
+  pandoc --section-divs -f markdown -t  html5 -o $cvOutputDir/$cvBuildName.html $i
 done
 
 ###
@@ -38,13 +39,15 @@ done
 #
 
 #-A $cvOutputDir/cv.html \
-
+echo $cvBuildDir
 
 pandoc -s -H $cvBuildDir/simple.css --section-divs -f markdown -t html5 \
 -o "$cvOutputDir/$cvName.html" \
 -A $cvOutputDir/objective.html \
 -A $cvOutputDir/skills.html \
 -A $cvOutputDir/experience.html \
+-A $cvOutputDir/interests.html \
+-A $cvOutputDir/self-study.html \
 -A $cvOutputDir/education.html \
 -A $cvOutputDir/github.html \
 -A $cvOutputDir/factornine.html \

@@ -1,24 +1,23 @@
 ## Experience
 
-**Angular Front End Developer, Qudini Ltd London** • _May 2015-July 2017_
+**Software Engineer, Qudini Ltd London** • _May 2015-March 2020_
 
-- Development of features for the Qudini Web App, written in AngularJS
+- Was part of a team that created a hybrid React / AngularJS app. This enabled the team to use the new technology (with improved state management and testing) whilst maintaining the old.
 
-- Styling using SASS
+- Worked effectively with the product/design team to ensure the successful delivery of multiple new features for the Web Application.
 
-- Writing Selenium tests using Selenese
+- Ensured that the React Native features I introduced were solid by writing extensive Jest test coverage.
 
-- Implementing API's from a Java PlayFramework back-end
+- Liaised with the Quality Assurance team so a high quality product was delivered to multiple clients within Sprint deadlines.
 
-- Upgrading the parts of the Application to use Bootstrap with a Mobile emphasis
-
+- I led Scrum ceremonies such as the Daily Standup and Sprint Retro successfully so my team Funkadelic bonded and so increased their sprint velocity.
  
 
 **Flash Programmer (Freelance), VCCP Me, London** • _April 2015_
 
 - Creation of Flash-Talking banner ads for Kia using Greensock animation
 
-**Angular Developer (Freelance), Ipcortex, London/Bletchley Park** • _March-April 2015_
+**AngularJS Developer (Freelance), Ipcortex, London/Bletchley Park** • _March-April 2015_
 
 - Development of an iOS app using Ionic for implementing Web RTC.
 
@@ -28,9 +27,9 @@
 
 - Hosted on Github: [Magic Squares Mobile](https://github.com/russellf9/magic-squares-mobile)
 
-**Angular Developer (Freelance), Marketing Store Worldwide, London** • _November 2014–February 2015_
+**AngularJS Developer (Freelance), Marketing Store Worldwide, London** • _November 2014–February 2015_
 
-* Development of \`Scheduling\` app for McDonald's using Angular and Firebase, to be used in-house for the design team to
+* Development of \`Scheduling\` app for McDonald's using AngularJS and Firebase, to be used in-house for the design team to
 organise assets scheduled for in-store screen displays
 
 - For this application I created a modular application that was compatible with IE9 and incorporated a Gulp build 
@@ -38,9 +37,9 @@ process
 
 **Software engineer (Freelance), PTASocial, London** • _May 2014–October 2014_
 
-- Revision of existing site for PTASocial to be more Angular and to utilise HAL compliant application architecture 
+- Revision of existing site for PTASocial to be more AngularJS and to utilise HAL compliant application architecture 
 
-- Using various Angular Services to handle updates to and responses from the Java Play Framework back-end 
+- Using various AngularJS Services to handle updates to and responses from the Java Play Framework back-end 
 
 - Creation of Angular UI elements to present the View to the user and allow the user to perform CRUD operations to 
 modify the Model 

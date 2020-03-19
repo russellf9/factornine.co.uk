@@ -1,3 +1,4 @@
 ## Objective
 
-To a valuable part of a team using cutting edge technology, utilising my current skills and extending them further. I have a passion for using the best parts of JavaScript with a love of functional programming.
+I'm currently looking for a new front-end role. I want to be part of a great team
+where I can bring my wealth of experience and continue my journey as a Software Engineer.
