@@ -4,7 +4,7 @@
 
 - Languages – **JavaScript**, Shell, HTML5, CSS3, and SASS
 
-- Frameworks, platforms and libraries  – **React**, **React Native**, **Typescript**, **RXJs**, Node.js, Jest
+- Frameworks, platforms and libraries  – **React**, **React Native**, **Typescript**, **RXJs**, AngularJS, Node.js, Jest
 
 ### Agile Methodology
 
