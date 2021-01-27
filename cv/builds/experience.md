@@ -1,5 +1,11 @@
 ## Experience
 
+**Frontend Developer, Checkatrade Ltd London** • _May 2020-Dec 2020_ 
+
+- Delivering Content for Checkatrade.com using **React.js** with **Next.js**.
+
+- I worked within a small team to create an iFrame application built with **Next.js** to allow consumers to search for trades.
+
 **Software Engineer, Qudini Ltd London** • _May 2015-March 2020_
 
 - I was an integral part of the development team which saw a startup grow from a handful of people to a large team of over thirty.

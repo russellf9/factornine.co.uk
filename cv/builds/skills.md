@@ -4,7 +4,9 @@
 
 - Languages – **JavaScript**, Shell, HTML5, CSS3, and SASS
 
-- Frameworks, platforms and libraries  – **React**, **React Native**, **Typescript**, **RXJs**, AngularJS, Node.js, Jest
+- Frameworks, platforms and libraries  – **React**, **React Native**, **Typescript**, **Next.js**, **RxJs**, AngularJS, Node.js, Jest
+
+- **VIM** - I've recently started using NVIM as my main editor.
 
 ### Agile Methodology
 

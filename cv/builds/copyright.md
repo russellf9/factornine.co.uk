@@ -1,1 +1,1 @@
-© 2015. Russell Wenban • All rights reserved.
+ 2015. Russell Wenban • All rights reserved.
